@@ -47,3 +47,66 @@ p {
     font-family: hansen;
 }
 
+.initialer{
+    color: #ffffff;
+    font-size: 29px;
+    font-family: 'Calibri';
+    background-color: #df9791;
+    width: 45px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 15px;
+    grid-area: ini;
+}
+
+.duplicate-bars{
+    height: 20px;
+    background-color: #EDE5AF;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.thumbnail {
+    height: 35px;
+    width: 35px;
+    background-color: #DF9791;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.licens-background{
+    background-color: #E0F9F0;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 29px;
+    font-family: 'Calibri';
+
+}
+
+.alert-overlay-toptekst{
+    color: #E0F9F0;
+    font-family: 'Calibri';
+    text-align: center;
+    size: 21px;
+    grid-area: top;
+}
+
+.red-cross{
+    background-color: #e07070;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 85px;
+    padding-right: 85px;
+    border-radius: 30px;
+    grid-area: x;
+}
+
+.alert-container{
+    grid-template-areas: ;
+}
