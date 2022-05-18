@@ -40,10 +40,7 @@ body {
     background-color: #DCBCFD;
     border-radius: 15px;
     width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 p {
