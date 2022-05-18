@@ -1,3 +1,4 @@
+/* Søren */ 
 @font-face {
     font-family: hansen;
     src: url(fonts/hansen.ttf);
@@ -48,4 +49,21 @@ body {
 
 p {
     font-family: hansen;
+}
+
+/*Søren */ 
+
+header{
+    font-family: hansen;
+    color: #E0F9F0;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 23px;
+}
+h1{
+    font-family: hansen;
+    font-size: 13px;
+    color: #E0F9F0;
+    margin-left: 20px;
+    margin-top: 20px;
 }
