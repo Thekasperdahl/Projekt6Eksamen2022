@@ -7,6 +7,8 @@
 body {
     background-color: #36244D;
     margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .container-a {
@@ -52,18 +54,32 @@ p {
 }
 
 /*Søren */ 
-
+/* Staal*/
 header{
     font-family: hansen;
     color: #E0F9F0;
     text-align: center;
     padding-top: 20px;
     font-size: 23px;
+    margin-bottom: 20px;
 }
 h1{
     font-family: hansen;
-    font-size: 13px;
+    font-size: 11px;
     color: #E0F9F0;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+.sub-box{
+    background-color: #36244D;
+    opacity: 10%;
+    text-align: center;
+}
+input{
+    width: 17rem;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
