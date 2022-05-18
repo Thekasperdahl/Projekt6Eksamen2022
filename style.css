@@ -8,14 +8,79 @@
 body {
     background-color: #36244D;
     margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .container-a {
     margin-top: 40px;
-    display: grid;
-    grid-template-areas: 
-    ". . . . man . . . mib . . . ."
-    ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-duplicates-text {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.container-latest {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duplicate-bars {
+    height: 20px;
+    background-color: #EDE5AF;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container-subs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-bars-1 {
+    height: 20px;
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.latest-bars-2 {
+    height: 20px;
+    background-color: #CBEBDB;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.thumbnail {
+    height: 35px;
+    width: 35px;
+    background-color: #DF9791;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.duplicates-text {
+    grid-area: dt;
+}
+
+.date-text {
+    grid-area: da;
 }
 
 .add-new {
@@ -25,6 +90,9 @@ body {
     width: 134px;
     border-radius: 15px;
     grid-area: man;
+}
+.add-new-text {
+    margin-bottom: -20px;
 }
 
 .info-box {
@@ -50,6 +118,19 @@ p {
 }
 
 h2 {
+    font-family: hansen;
+    font-size: 16px;
+    text-align: center;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-family: hansen;
+    font-size: 15px;
+}
+
+.info-box-out {
+    text-align: center;
     font-family: hansen;
 }
 
