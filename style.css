@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding-left: 40px;
     padding-right: 40px;
+    text-align: center;
 }
 
 .container-a {
@@ -69,17 +70,22 @@ h1{
     color: #E0F9F0;
     margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 2px;
 }
 .sub-box{
-    background-color: #36244D;
     opacity: 10%;
-    text-align: center;
+    background-color: #36244D;
 }
 input{
     width: 17rem;
     height: 25px;
     border-radius: 10px;
     margin-bottom: 10px;
+    font-family: hansen;
+
+
+}
+
+::placeholder{
+    opacity: 1;
 }
