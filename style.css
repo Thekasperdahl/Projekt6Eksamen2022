@@ -18,9 +18,10 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    grid-area: cna;
 }
 
-.container-duplicates-text {
+.container-duplicates {
     display: flex;
     justify-content: space-between;
 }
@@ -90,7 +91,6 @@ body {
     height: 146px;
     width: 134px;
     border-radius: 15px;
-    grid-area: man;
 }
 .add-new-text {
     margin-bottom: -20px;
@@ -102,7 +102,6 @@ body {
     height: 146px;
     width: 134px;
     border-radius: 15px;
-    grid-area: mib;
 }
 
 .plus-icon {
@@ -150,10 +149,93 @@ h3 {
     overflow: hidden;
     overflow-y: scroll;
 }
+
+
 /* Søren */
 
+
+/* STAAL */
+
+header{
+    font-family: hansen;
+    color: #E0F9F0;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-family: hansen;
+    font-size: 11px;
+    color: #E0F9F0;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    display: none;
+}
+
+/* STAAL */
 @media only screen and (min-width: 700px) {
-    body {
-        background-color: #CBEBDB;
+
+    h1{
+        display: block;
+        color: #FFFFFF;
+        font-size: 60px;
+        text-align: left;
+        margin-left: 0px;
+        grid-area: h1;
+    }
+
+    .scroll-bg-duplicates {
+        background-color: #ffffff10;
+        border-radius: 15px;
+        grid-area: sbd;
+    }
+    
+    .scroll-bg-latest {
+        background-color: #ffffff10;
+        border-radius: 15px;
+        grid-area: sbl;
+    }
+    
+    .scroll-bg-sub {
+        background-color: #ffffff10;
+        border-radius: 15px;
+        grid-area: sbs;
+    }
+
+    .container-duplicates {
+        display: none;
+    }
+    
+    .container-latest {
+        display: none;
+    }
+
+    .container-subs {
+        display: none;
+    }
+
+    .container-a {
+        justify-content: space-around;
+        grid-area: con;
+        margin-top: 0px;
+    }
+
+    .scroll-div {
+        height: 580px;
+    }
+
+    .desktop-grid {
+        display: grid;
+        margin-top: 50px;
+        grid-template-areas: 
+        "sbs sbs sbs sbs sbs sbs sbs sbs sbs . con"
+        "sbs sbs sbs sbs sbs sbs sbs sbs sbs . ."
+        "sbs sbs sbs sbs sbs sbs sbs sbs sbs . sbl"
+        "sbs sbs sbs sbs sbs sbs sbs sbs sbs . ."
+        "sbs sbs sbs sbs sbs sbs sbs sbs sbs . sbd"
+        ;
     }
 }
