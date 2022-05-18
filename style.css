@@ -47,3 +47,88 @@ p {
     font-family: hansen;
 }
 
+.alert-container{
+    margin: auto;
+    width: 330px;
+    padding: 10px;
+}
+
+.alert-overlay-licens{
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.thumbnail {
+    height: 35px;
+    width: 35px;
+    background-color: #DF9791;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.alert-overlay-toptekst{
+    color: #E0F9F0;
+    font-family: 'Calibri';
+    text-align: center;
+    size: 21px;
+}
+
+.red-cross{
+    background-color: #e07070;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 67.5px;
+    padding-right: 67.5px;
+    border-radius: 30px;
+
+}
+
+.check-mark{
+    background-color: #E0F9F0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border-radius: 30px;
+}
+
+.knap-div{
+    text-align: center
+}
+
+.check-mark-round{
+    background-color: #E0F9F0;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%;
+}
+
+.oversigt-container{
+    margin: auto;
+    max-width: 330px;
+    padding: 10px;
+}
+
+.info-ikon{
+    grid-area: infoi;
+}
+
+.info-tekst{
+    margin: auto;
+    padding: 10px;
+    background-color: #cbebdb;
+    border-radius: 15px;
+    grid-area: infotekst;
+}
+
+.info-tekst-container{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    "infoi infotekst";
+}
