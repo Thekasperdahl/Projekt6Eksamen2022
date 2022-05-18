@@ -1,6 +1,6 @@
 @font-face {
     font-family: hansen;
-    src: url(fonts/);
+    src: url(fonts/hansen.ttf);
 }
 
 body {
@@ -35,8 +35,15 @@ body {
 }
 
 .plus-icon {
-    color: #15875d;
+    color: #36244D;
     font-size: 50px;
+    background-color: #DCBCFD;
+    border-radius: 15px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 p {
