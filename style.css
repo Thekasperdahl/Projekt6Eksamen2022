@@ -1,0 +1,44 @@
+@font-face {
+    font-family: hansen;
+    src: url(fonts/);
+}
+
+body {
+    background-color: #36244D;
+    margin: 0;
+}
+
+.container-a {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    ". . . . man . . . mib . . . ."
+    ;
+}
+
+.add-new {
+    background-color: #E0F9F0;
+    border: 0;
+    height: 146px;
+    width: 134px;
+    border-radius: 15px;
+    grid-area: man;
+}
+
+.info-box {
+    background-color: #E0F9F0;
+    border: 0;
+    height: 146px;
+    width: 134px;
+    border-radius: 15px;
+    grid-area: mib;
+}
+
+.plus-icon {
+    color: #15875d;
+    font-size: 50px;
+}
+
+p {
+    font-family: hansen;
+}
