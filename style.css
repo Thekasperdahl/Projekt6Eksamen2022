@@ -175,7 +175,14 @@ h1{
     display: none;
 }
 
+.sub-headline {
+    display: none;
+}
+
 /* STAAL */
+
+/* Søren */
+
 @media only screen and (min-width: 700px) {
 
     h1{
@@ -203,6 +210,35 @@ h1{
         background-color: #ffffff10;
         border-radius: 15px;
         grid-area: sbs;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        display: block;
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #e0f9f050;
+        border-radius: 15px;
+      }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f111;
+        border-radius: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #e0f9f070;
+    }
+
+    .latest-bars-2 {
+        margin-right: 10px;
+    }
+
+    .latest-bars-1 {
+        margin-right: 10px;
     }
 
     .container-duplicates {
@@ -238,4 +274,13 @@ h1{
         "sbs sbs sbs sbs sbs sbs sbs sbs sbs . sbd"
         ;
     }
+
+    .sub-headline {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
+
+/* Søren */
