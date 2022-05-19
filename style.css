@@ -90,7 +90,7 @@ label{
 
   }
 input[type=submit] {
-    width: 100%;
+    width: 90px;
     background-color: #DCBCFD;
     padding: 6px;
     color: #36244D;
@@ -101,6 +101,7 @@ input[type=submit] {
     font-size: 18px;
     border: 1px solid #DCBCFD;
   }
+
 ::placeholder{
     color: #E0F9F0;
     opacity: 50%;
@@ -167,3 +168,4 @@ input[type=submit] {
     grid-area: cda;
 }
 }
+/* Staal*/ 
