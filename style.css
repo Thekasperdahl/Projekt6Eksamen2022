@@ -41,11 +41,12 @@
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #36244D;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-width: 1000px;
 }
 
 /* The Close Button */
@@ -330,7 +331,7 @@ header{
     margin-bottom: 20px;
 }
 
-/* .backarrow{
+.backarrow{
     width: 20px;
     display: flex;
     justify-content: flex-start;
@@ -356,7 +357,8 @@ label{
     text-align: left;
 
   }
-button {
+
+.button {
     width: 90px;
     background-color: #DCBCFD;
     padding: 6px;
@@ -438,7 +440,7 @@ button {
     #cdate{
         grid-area: cda;
     }
-} */
+}
 /* Staal*/ 
 
 /* Søren */

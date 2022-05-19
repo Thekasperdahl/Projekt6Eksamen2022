@@ -196,11 +196,68 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-
-            
-
-            <button id="add-bar-btn">Click Me!</button>
+            <img src="assets/backarrow.png" alt="backarrow" class="backarrow" />
+    <header>Add new subscription</header>
+    <div class="gridnewsub">
+      <label for="sname"
+        >Subscription name
+        <input
+          type="text"
+          id="sname"
+          name="subsribtionname"
+          placeholder="Slack"
+      /></label>
+      <label for="funct"
+        >Functionality
+        <input
+          type="text"
+          id="funct"
+          name="functionality"
+          placeholder="used for communication etc."
+      /></label>
+      <label for="smail"
+        >Subscription support-mail
+        <input
+          type="text"
+          id="smail"
+          name="supportmail"
+          placeholder="example@support.com"
+      /></label>
+      <label for="cost">
+        Monthly cost in DKK
+        <input type="text" id="cost" name="monthlycost" placeholder="299.95"
+      /></label>
+      <label for="yname">
+        Your name
+        <input
+          type="text"
+          id="yname"
+          name="yourname"
+          placeholder="Michael Surname"
+      /></label>
+      <label for="ymail">
+        Mail used for subscription
+        <input
+          type="text"
+          id="ymail"
+          name="yourmail"
+          placeholder="yourmail@example.com"
+      /></label>
+      <label for="client">
+        Project/Client
+        <input
+          type="text"
+          id="client"
+          name="project/client"
+          placeholder="company A/S"
+        />
+      </label>
+      <label for="cdate">
+        Creation date
+        <input type="text" id="cdate" name="creationdate" placeholder="22/4-22"
+      /></label>
+      <button class="button" id="add-bar-btn" onclick="returnText()">Confirm</button>
+    </div>
         </div>
   
     </div>
