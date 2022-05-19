@@ -9,21 +9,61 @@
   </head>
   <body>
     <header>Add new subscription</header>
-    <h1>Subscription name</h1>
-    <input type="text" placeholder="Slack" />
-    <h1>Functionality</h1>
-    <input type="text" placeholder="Used for workplace communication etc." />
-    <h1>Subscription support-mail</h1>
-    <input type="text" placeholder="Slack@example.com" />
-    <h1>Monthly cost in DKK</h1>
-    <input type="text" placeholder="299.95" />
-    <h1>Your name</h1>
-    <input type="text" placeholder="Micheal Example" />
-    <h1>Mail used for subscription</h1>
-    <input type="text" placeholder="jks@example.com" />
-    <h1>Project/Client</h1>
-    <input type="text" placeholder="Example inc" />
-    <h1>Creation date</h1>
-    <input type="text" placeholder="22/5-22" />
+    <div class="gridnewsub">
+      <form action="/action_page.php">
+        <label for="sname">Subscription name</label>
+        <input
+          type="text"
+          id="sname"
+          name="subsribtionname"
+          placeholder="Example"
+        />
+        <label for="funct">Functionality</label>
+        <input
+          type="text"
+          id="funct"
+          name="functionality"
+          placeholder="used for exampling examples"
+        />
+        <label for="smail">Subscription support-mail</label>
+        <input
+          type="text"
+          id="smail"
+          name="supportmail"
+          placeholder="example@support.com"
+        />
+        <label for="cost"> Monthly cost in DKK </label>
+        <input type="text" id="cost" name="monthlycost" placeholder="299.95" />
+        <label for="yname"> Your name</label>
+        <input
+          type="text"
+          id="yname"
+          name="yourname"
+          placeholder="Michael Surname"
+        />
+        <label for="ymail"> Mail used for subscription</label>
+        <input
+          type="text"
+          id="ymail"
+          name="yourmail"
+          placeholder="yourmail@example.com"
+        />
+        <label for="client"> Project/Client </label>
+        <input
+          type="text"
+          id="client"
+          name="project/client"
+          placeholder="company A/S"
+        />
+        <label for="cdate"> Creation date </label>
+        <input
+          type="text"
+          id="cdate"
+          name="creationdate"
+          placeholder="22/4-22"
+        />
+        <input type="submit" value="Confirm" />
+      </form>
+    </div>
   </body>
 </html>

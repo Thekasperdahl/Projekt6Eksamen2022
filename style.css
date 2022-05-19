@@ -64,21 +64,44 @@ header{
     font-size: 23px;
     margin-bottom: 20px;
 }
-h1{
-    font-family: hansen;
-    font-size: 11px;
-    color: #E0F9F0;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 2px;
-}
-input{
-    opacity: 10%;
-}
-input[type=text]{
-    width: 17rem;
-    height: 25px;
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 1px solid #47385D;
     border-radius: 10px;
-    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #47385D;
+    color: #E0F9F0;
+
+  }
+label{ 
     font-family: hansen;
+    color: #E0F9F0;
+    font-size: 12px;
+
+  }
+input[type=submit] {
+    width: 100%;
+    background-color: #DCBCFD;
+    padding: 6px;
+    color: #36244D;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #DCBCFD;
+  }
+::placeholder{
+    color: #E0F9F0;
+    opacity: 50%;
+}
+
+@media(min-width="700px") {
+ .gridnewsub{
+     
+ }
+    
 }
