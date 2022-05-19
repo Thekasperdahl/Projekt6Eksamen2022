@@ -7,6 +7,7 @@
     <title>SubPremo</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
+    <script src="form.js" defer></script>
 </head>
 <body>
 
@@ -128,60 +129,60 @@
                 <div id="bar-container" class="scroll-object">
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
-                        <div class="sub-bars-name"><p>Asana</p></div>
-                        <div class="sub-bars-project"><p>Abtion</p></div>
-                        <div class="sub-bars-date"><p>04/04-2022</p></div>
-                        <h5 class="sorting">A</h5>
-                        <p hidden class="sub-bars-cost">50</p>
+                        <div class="sub-bars-name">Asana</div>
+                        <div class="sub-bars-project">Abtion</div>
+                        <div class="sub-bars-date">04/04-2022</div>
+                        <!-- <h5 class="sorting">A</h5> -->
+                        <p hidden class="sub-bars-cost">50
                     </div>
                 
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">AF</h6></div>
-                        <div class="sub-bars-name"><p>After Dark</p></div>
-                        <div class="sub-bars-project"><p>Storms A/S</p></div>
-                        <div class="sub-bars-date"><p>03/07-2021</p></div>
-                        <p hidden class="sub-bars-cost">50</p>
+                        <div class="sub-bars-name">After Dark</div>
+                        <div class="sub-bars-project">Storms A/S</div>
+                        <div class="sub-bars-date">03/07-2021</div>
+                        <p hidden class="sub-bars-cost">50
                     </div>
                 
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">AN</h6></div>
-                        <div class="sub-bars-name"><p>Any Desk</p></div>
-                        <div class="sub-bars-project"><p>Mærsk A/S</p></div>
-                        <div class="sub-bars-date"><p>21/04-2019</p></div>
-                        <p hidden class="sub-bars-cost">50</p>
+                        <div class="sub-bars-name">Any Desk</div>
+                        <div class="sub-bars-project">Mærsk A/S</div>
+                        <div class="sub-bars-date">21/04-2019</div>
+                        <p hidden class="sub-bars-cost">50
                     </div>
 
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">BA</h6></div>
-                        <div class="sub-bars-name"><p>Bacula</p></div>
-                        <div class="sub-bars-project"><p>Repeat</p></div>
-                        <div class="sub-bars-date"><p>02/10-2020</p></div>
-                        <h5 class="sorting">B</h5>
-                        <p hidden class="sub-bars-cost">50</p>
+                        <div class="sub-bars-name">Bacula</div>
+                        <div class="sub-bars-project">Repeat</div>
+                        <div class="sub-bars-date">02/10-2020</div>
+                        <!-- <h5 class="sorting">B</h5> -->
+                        <p hidden class="sub-bars-cost">50
                     </div>
                 
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">BO</h6></div>
-                        <div class="sub-bars-name"><p>Box Backup</p></div>
-                        <div class="sub-bars-project"><p>Fitness World</p></div>
-                        <div class="sub-bars-date"><p>01/02-2017</p></div>
-                        <p hidden class="sub-bars-cost">50</p>
+                        <div class="sub-bars-name">Box Backup</div>
+                        <div class="sub-bars-project">Fitness World</div>
+                        <div class="sub-bars-date">01/02-2017</div>
+                        <p hidden class="sub-bars-cost">50
                     </div>
 
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
-                        <div class="sub-bars-name"><p>Creative Cloud</p></div>
-                        <div class="sub-bars-project"><p>Abtion</p></div>
-                        <div class="sub-bars-date"><p>01/01-2016</p></div>
-                        <h5 class="sorting">C</h5>
-                        <p hidden class="sub-bars-cost">50</p>
+                        <div class="sub-bars-name">Creative Cloud</div>
+                        <div class="sub-bars-project">Abtion</div>
+                        <div class="sub-bars-date">01/01-2016</div>
+                        <!-- <h5 class="sorting">C</h5> -->
+                        <p hidden class="sub-bars-cost">50
                     </div>
 
                     <div class="latest-bar">
                         <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
-                        <div class="sub-bars-name"><p>Creative Cloud</p></div>
-                        <div class="sub-bars-project"><p>Abtion</p></div>
-                        <div class="sub-bars-date"><p>03/10-2020</p></div>
+                        <div class="sub-bars-name">Creative Cloud</div>
+                        <div class="sub-bars-project">Abtion</div>
+                        <div class="sub-bars-date">03/10-2020</div>
                         <p hidden class="sub-bars-cost">50</p>
                     </div>
                 </div>
@@ -196,70 +197,78 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="assets/backarrow.png" alt="backarrow" class="backarrow" />
-    <header>Add new subscription</header>
-    <div class="gridnewsub">
-      <label for="sname"
-        >Subscription name
-        <input
-          type="text"
-          id="sname"
-          name="subsribtionname"
-          placeholder="Slack"
-      /></label>
-      <label for="funct"
-        >Functionality
-        <input
-          type="text"
-          id="funct"
-          name="functionality"
-          placeholder="used for communication etc."
-      /></label>
-      <label for="smail"
-        >Subscription support-mail
-        <input
-          type="text"
-          id="smail"
-          name="supportmail"
-          placeholder="example@support.com"
-      /></label>
-      <label for="cost">
-        Monthly cost in DKK
-        <input type="text" id="cost" name="monthlycost" placeholder="299.95"
-      /></label>
-      <label for="yname">
-        Your name
-        <input
-          type="text"
-          id="yname"
-          name="yourname"
-          placeholder="Michael Surname"
-      /></label>
-      <label for="ymail">
-        Mail used for subscription
-        <input
-          type="text"
-          id="ymail"
-          name="yourmail"
-          placeholder="yourmail@example.com"
-      /></label>
-      <label for="client">
-        Project/Client
-        <input
-          type="text"
-          id="client"
-          name="project/client"
-          placeholder="company A/S"
-        />
-      </label>
-      <label for="cdate">
-        Creation date
-        <input type="text" id="cdate" name="creationdate" placeholder="22/4-22"
-      /></label>
-      <button class="button" id="add-bar-btn" onclick="returnText()">Confirm</button>
-    </div>
-        </div>
-  
+
+            <img src="assets/backarrow.png" alt="backarrow" class="backarrow"/>
+
+            <header>Add new subscription</header>
+
+            <div class="gridnewsub">
+
+                <label for="sname">Subscription name
+                    <input
+                    type="text"
+                    id="sname"
+                    name="subsribtionname"
+                    placeholder="Slack"
+                    />
+                </label>
+
+                <label for="funct">Functionality
+                    <input
+                    type="text"
+                    id="funct"
+                    name="functionality"
+                    placeholder="used for communication etc."
+                    />
+                </label>
+
+                <label for="smail">Subscription support-mail
+                    <input
+                    type="text"
+                    id="smail"
+                    name="supportmail"
+                    placeholder="example@support.com"
+                    />
+                </label>
+
+                <label for="cost">Monthly cost in DKK
+                    <input type="text" id="cost" name="monthlycost" placeholder="299.95"/>
+                </label>
+
+                <label for="yname">Your name
+                    <input
+                    type="text"
+                    id="yname"
+                    name="yourname"
+                    placeholder="Michael Surname"
+                    />
+                </label>
+
+                <label for="ymail">Mail used for subscription
+                    <input
+                    type="text"
+                    id="ymail"
+                    name="yourmail"
+                    placeholder="yourmail@example.com"
+                    />
+                </label>
+
+                <label for="client">Project/Client
+                    <input
+                    type="text"
+                    id="client"
+                    name="project/client"
+                    placeholder="company A/S"
+                    />
+                </label>
+
+                <label for="cdate">Creation date
+                    <input type="text" id="cdate" name="creationdate" placeholder="dd/mm-yyyy"/>
+                </label>
+
+                <button class="button" id="add-bar-btn" onclick="returnText()">Confirm</button>
+            </div>
+        </div>  
     </div>
 </body>
 </html>

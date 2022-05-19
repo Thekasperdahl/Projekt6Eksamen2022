@@ -47,6 +47,8 @@
   border: 1px solid #888;
   width: 80%;
   max-width: 1000px;
+  border-radius: 15px;
+  border-width: 0px;
 }
 
 /* The Close Button */
@@ -390,7 +392,7 @@ label{
         margin-bottom: 50px;
     }
 
-    button {
+    .button {
         text-align: center;
         width: 90px;
         grid-area: con;
@@ -512,7 +514,7 @@ label{
 
     .latest-bar {
         margin-right: 10px;
-        margin-left: 30px;
+        margin-left: 10px;
         position: relative;
     }
 
@@ -685,7 +687,7 @@ label{
         align-items: center;
         font-size: 13px;
         margin-left: auto;
-        padding-right: 80px;
+        padding-right: 65px;
     }
 
     .project-client-headline {
