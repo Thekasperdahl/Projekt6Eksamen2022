@@ -220,17 +220,27 @@ p {
     ;
 }
 
-.red-cancel{
+#red-cancel{
     background-color: #e07070;
     border-radius: 30px;
     grid-area: cancelsub;
     margin: 1;
 }
 
-.alert-admin{
+#red-cancel:hover{
+    background-color: #000000;
+    transition: ease-in 0.2s;
+}
+
+#alert-admin{
     background-color: #E0F9F0;
     border-radius: 30px;
     grid-area: alert;
+}
+
+#alert-admin:hover{
+    background-color: #000000;
+    transition: ease-in 0.2s;
 }
 
 .send-text{

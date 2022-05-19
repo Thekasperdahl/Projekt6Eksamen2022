@@ -1,13 +1,30 @@
-const array1 = ["#FF5733", "#FF00F3", "#2AB59D"];
+//kodet af Kasper
 
-const farve = array1 [1];
+const array1 = ["#e07070", "#Efefef", "#E0F9F0"];
 
-const box = document.getElementsByClassName('alert-admin');
+for (let i = 0; i < array1.length ; i++) {
+var hejsa = array1[i];}
 
-addEventListener('mouseover', function handleMouseOver() {
-  box.style.color = farve;
+console.log (hejsa)
+
+let box = document.getElementById('alert-admin');
+
+box.addEventListener('mouseover', function handleMouseOver() {
+  box.style.color = hejsa;
 });
 
-addEventListener('mouseout', function handleMouseOut() {
+box.addEventListener('mouseout', function handleMouseOut() {
   box.style.color = 'black';
+});
+
+let cancel = array1 [0];
+
+let box2 = document.getElementById('red-cancel');
+
+box2.addEventListener('mouseover', function handleMouseOver() {
+  box2.style.color = cancel;
+});
+
+box2.addEventListener('mouseout', function handleMouseOut() {
+  box2.style.color = 'black';
 });
