@@ -1,6 +1,6 @@
 //kodet af Kasper
 
-const hoverjs = ["#e07070", "#Efefef", "#E0F9F0"];
+const hoverjs = ["#e07070", "#Efefef", "#E0F9F0", "#000000"];
 
 for (let i = 0; i < hoverjs.length ; i++) {
 var hejsa = hoverjs[i];}
@@ -26,3 +26,19 @@ box2.addEventListener('mouseover', function handleMouseOver() {
 box2.addEventListener('mouseout', function handleMouseOut() {
   box2.style.color = 'black';
 });
+
+//if mouseover også run style color change. 
+
+const adminBox = document.getElementById('admin-oversigt');
+let adminClicked = false;
+adminBox.addEventListener('click', function onClick(){
+  if (adminClicked == false){
+    adminBox.style.color = hoverjs[0];
+    adminClicked = true;
+  } 
+  else 
+  {
+    adminBox.style.color = hoverjs[3];
+    adminClicked = false;
+  }
+}); 
