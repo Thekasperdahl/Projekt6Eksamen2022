@@ -1,11 +1,9 @@
 //kodet af Kasper
 
-const array1 = ["#e07070", "#Efefef", "#E0F9F0"];
+const hoverjs = ["#e07070", "#Efefef", "#E0F9F0"];
 
-for (let i = 0; i < array1.length ; i++) {
-var hejsa = array1[i];}
-
-console.log (hejsa)
+for (let i = 0; i < hoverjs.length ; i++) {
+var hejsa = hoverjs[i];}
 
 let box = document.getElementById('alert-admin');
 
@@ -17,7 +15,7 @@ box.addEventListener('mouseout', function handleMouseOut() {
   box.style.color = 'black';
 });
 
-let cancel = array1 [0];
+let cancel = hoverjs [0];
 
 let box2 = document.getElementById('red-cancel');
 
