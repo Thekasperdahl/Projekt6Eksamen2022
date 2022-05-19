@@ -183,11 +183,13 @@ p {
 
 .budget-container{
     display: grid;
-    background-color: #E0F9F0;
+    background-color: #cbebdb;
     border-radius: 15px;
     grid-template-columns: .35fr 2fr;
+    margin-bottom: 10px;
     grid-template-areas: 
     "monikon pmonth"
+    ". sudate"
     ;
 }
 
@@ -201,4 +203,42 @@ p {
     margin: 7px;
     grid-area: pmonth;
     font-family: "calibri";
+}
+
+.sub-date{
+    font-family: "Calibri";
+    grid-area: sudate;
+    margin: 7px;
+}
+
+.cancel-alert-container{
+    display: grid;
+    grid-column-gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "alert cancelsub"
+    ;
+}
+
+.red-cancel{
+    background-color: #e07070;
+    border-radius: 30px;
+    grid-area: cancelsub;
+    margin: 1;
+}
+
+.alert-admin{
+    background-color: #E0F9F0;
+    border-radius: 30px;
+    grid-area: alert;
+}
+
+.send-text{
+    font-family: "Calibri";
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
