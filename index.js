@@ -11,6 +11,8 @@ const addNewBtn = document.getElementById("add-bar-btn");
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 const subCount = document.getElementById("sub-count");
+const priceTag = document.getElementsByClassName("sub-bars-cost");
+const monthlyCost = document.getElementById("sub-cost");
 
 const bars = document.getElementsByClassName("latest-bar");
 let barCounter = bars.length;
@@ -39,6 +41,10 @@ subCount.innerHTML = barCounter;
 addNewBtn.onclick = function(){addBar()};
 
 function addBar() {
+    let cost = monthlyCost.innerText;
+    let newCost = parseInt(cost)+50;
+    monthlyCost.innerText = newCost;
+
     let bar = document.createElement("div");
     bar.classList.add("latest-bar");
 
@@ -90,9 +96,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-let priceTag = document.getElementsByClassName("sub-bars-cost");
-const monthlyCost = document.getElementById("sub-cost");
 let sum = 0;
 
 for (let c = 0; c < priceTag.length; c++) {
