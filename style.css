@@ -72,20 +72,13 @@ h1{
     margin-left: 10px;
     margin-bottom: 2px;
 }
-.sub-box{
-    opacity: 10%;
-    background-color: #36244D;
-}
 input{
+    opacity: 10%;
+}
+input[type=text]{
     width: 17rem;
     height: 25px;
     border-radius: 10px;
     margin-bottom: 10px;
     font-family: hansen;
-
-
-}
-
-::placeholder{
-    opacity: 1;
 }
