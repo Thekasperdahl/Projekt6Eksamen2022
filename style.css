@@ -89,7 +89,7 @@ label{
     text-align: left;
 
   }
-input[type=submit] {
+button {
     width: 90px;
     background-color: #DCBCFD;
     padding: 6px;
@@ -117,7 +117,7 @@ input[type=submit] {
      font-size: 40px;
      margin-bottom: 50px;
  }
- input[type=submit] {
+button {
        text-align: center;
        width: 90px;
        grid-area: con;
