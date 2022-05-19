@@ -18,10 +18,16 @@ body {
     text-align: center;
 }
 
+.scroll-object :hover {
+    background-color: #ffffff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 .container-a {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     grid-area: cna;
 }
 
@@ -47,11 +53,24 @@ body {
     display: flex;
 }
 
+.duplicate-bars-sub {
+    height: 20px;
+    background-color: #EDE5AF;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    position: relative;
+}
+
 .duplicate-bars-name {
     display: flex;
     margin-left: 10px;
     align-items: center;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .duplicate-bars-date {
@@ -66,6 +85,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 13px;
+    margin-left: 10px;
 }
 
 .sub-bars-project {
@@ -171,7 +191,15 @@ body {
     height: 146px;
     width: 134px;
     border-radius: 15px;
+    margin-right: 20px;
 }
+
+.add-new :hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
 .add-new-text {
     margin-bottom: -20px;
 }
@@ -182,6 +210,7 @@ body {
     height: 146px;
     width: 134px;
     border-radius: 15px;
+    margin-left: 20px;
 }
 
 .plus-icon {
@@ -307,6 +336,11 @@ h1{
 
     }
     
+    .duplicate-bars-sub {
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+
     .scroll-bg-sub {
         background-color: #ffffff10;
         border-radius: 15px;
@@ -314,6 +348,7 @@ h1{
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
+        margin-right: 10px;
         }
 
     ::-webkit-scrollbar {
@@ -423,8 +458,7 @@ h1{
         "sbs sbs sbs sbs sbs sbs sbs sbs sbs . ."
         "sbs sbs sbs sbs sbs sbs sbs sbs sbs . duh"
         "sbs sbs sbs sbs sbs sbs sbs sbs sbs . sbd"
-        ;
-    }
+        ;    }
 
     .sub-headline {
         display: block;
@@ -484,7 +518,6 @@ h1{
         font-size: 13px;
         margin-left: 5px;
         min-width: 120px;
-        background-color: #DCBCFD;
     }
     
     .sub-bars-date {
@@ -492,12 +525,24 @@ h1{
         align-items: center;
         font-size: 11px;
         margin-right: 10px;
+        min-width: 90px;
     }
 
     .project-client-headline {
         display: none;
     }
 
+    .duplicate-bars-name {
+        width: 100px;
+    }
+
+    .add-new {
+        margin-right: 5px;
+    }
+
+    .info-box {
+        margin-left: 5px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -506,6 +551,7 @@ h1{
         align-items: center;
         font-size: 13px;
         margin-left: auto;
+        padding-right: 80px;
     }
 
     .project-client-headline {
