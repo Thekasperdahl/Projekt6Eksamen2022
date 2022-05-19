@@ -44,10 +44,52 @@ body {
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: flex;
+}
+
+.duplicate-bars-name {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 11px;
+}
+
+.duplicate-bars-date {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 11px;
+    margin-left: auto;
+}
+
+.sub-bars-name {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.sub-bars-project {
+    display: flex;
+    display: none;
+    align-items: center;
+    font-size: 13px;
+}
+
+.sub-bars-date {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    margin-right: 10px;
+    margin-left: auto;
 }
 
 .container-subs {
     display: flex;
+    justify-content: space-between;
+}
+
+.dup-headline {
+    display: none;
     justify-content: space-between;
 }
 
@@ -60,6 +102,7 @@ body {
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: flex;
 }
 
 .latest-bars-2 {
@@ -71,6 +114,31 @@ body {
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: flex;
+}
+
+.latest-bars-right-1 {
+    height: 20px;
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.latest-bars-right-2 {
+    height: 20px;
+    background-color: #CBEBDB;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
 }
 
 .thumbnail {
@@ -79,6 +147,14 @@ body {
     background-color: #DF9791;
     border-radius: 10px;
     margin-left: 10px;
+}
+
+.thumbnail-text {
+    color: #ffffff;
+    font-family: hansen;
+    margin-top: auto;
+    padding-top: 9px;
+    font-size: 15px;
 }
 
 .duplicates-text {
@@ -192,6 +268,10 @@ h1{
     display: none;
 }
 
+.sorting {
+    display: none;
+}
+
 /* STAAL */
 
 /* Søren */
@@ -258,23 +338,34 @@ h1{
     .latest-bars-2 {
         margin-right: 10px;
         margin-left: 30px;
-        grid-area: lb2;
         position: relative;
     }
 
     .latest-bars-1 {
         margin-right: 10px;
         margin-left: 30px;
+        position: relative;
+    }
+
+    .latest-bars-right-2 {
+        margin-right: 10px;
+        grid-area: lb2;
+        position: relative;
+    }
+
+    .latest-bars-right-1 {
+        margin-right: 10px;
         grid-area: lb1;
         position: relative;
     }
 
     .sorting {
         position: absolute;
+        display: block;
         z-index: 1;
         color: #CBEBDB;
         left: -25px;
-        top: 20px;
+        top: -35px;
         font-size: 25px;
         font-weight: 400;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -338,7 +429,17 @@ h1{
     .sub-headline {
         display: block;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .dup-headline {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .latest-headline {
@@ -362,6 +463,54 @@ h1{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
+    .duplicate-bars-name {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        font-size: 11px;
+    }
+    
+    .duplicate-bars-date {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        font-size: 11px;
+        margin-left: auto;
+    }
+    
+    .sub-bars-name {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        margin-left: 5px;
+        min-width: 120px;
+        background-color: #DCBCFD;
+    }
+    
+    .sub-bars-date {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        margin-right: 10px;
+    }
+
+    .project-client-headline {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    .sub-bars-project {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        margin-left: auto;
+    }
+
+    .project-client-headline {
+        display: block;
+    }
 }
 
 /* Søren */
