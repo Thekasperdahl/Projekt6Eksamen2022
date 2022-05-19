@@ -116,19 +116,89 @@ p {
 
 .info-ikon{
     grid-area: infoi;
+    padding-top: 5px;
+    padding-left: 12px;
 }
 
-.info-tekst{
-    margin: auto;
-    padding: 10px;
-    background-color: #cbebdb;
-    border-radius: 15px;
+.email-oversigt{
+    margin: 7px;
     grid-area: infotekst;
 }
 
 .info-tekst-container{
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: .35fr 2fr;
     grid-template-areas:
-    "infoi infotekst";
+    "infoi infotekst"
+    ". funktext";
+    background-color: #cbebdb;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.Functionallity-oversigt{
+    margin: 7px;
+    font-family: 'Calibri';
+    grid-area: funktext;
+}
+
+.admin-oversigt{
+    display: grid;
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    grid-template-columns: .35fr 2fr;
+    grid-template-areas: 
+    "kalikon admnam"
+    ". admail"
+    ". pname";
+    margin-bottom: 10px;
+}
+
+.kalender-ikon{
+    padding-top: 5px;
+    padding-left: 12px;
+    grid-area: kalikon;
+}
+
+.admin-name{
+    grid-area: admnam;
+    margin: 7px;
+}
+
+.admin-email{
+    font-family: "calibri";
+    grid-area: admail;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+.project-name{
+    font-family: "calibri";
+    grid-area: pname;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+.budget-container{
+    display: grid;
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    grid-template-columns: .35fr 2fr;
+    grid-template-areas: 
+    "monikon pmonth"
+    ;
+}
+
+.money-ikon{
+    padding-top: 5px;
+    padding-left: 12px;
+    grid-area: monikon;
+}
+
+.price-month{
+    margin: 7px;
+    grid-area: pmonth;
+    font-family: "calibri";
 }
