@@ -83,7 +83,11 @@ p {
     padding-left: 67.5px;
     padding-right: 67.5px;
     border-radius: 30px;
+}
 
+.red-cross:hover{
+    background-color: #DF9791;
+    transition: ease-in 0.2s;
 }
 
 .check-mark{
@@ -93,6 +97,11 @@ p {
     padding-left: 65px;
     padding-right: 65px;
     border-radius: 30px;
+}
+
+.check-mark:hover{
+    background-color: #bfdece;
+    transition: ease-in 0.2s;
 }
 
 .knap-div{
@@ -106,6 +115,11 @@ p {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 50%;
+}
+
+.check-mark-round:hover{
+    background-color: #F2D7CA;
+    transition: ease-in 0.2s;
 }
 
 .oversigt-container{
@@ -225,6 +239,8 @@ p {
     border-radius: 30px;
     grid-area: cancelsub;
     margin: 1;
+    color: #000000;
+    text-decoration: none;
 }
 
 #red-cancel:hover{
@@ -236,6 +252,8 @@ p {
     background-color: #E0F9F0;
     border-radius: 30px;
     grid-area: alert;
+    color: #000000;
+    text-decoration: none;
 }
 
 #alert-admin:hover{
