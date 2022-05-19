@@ -64,6 +64,12 @@ header{
     font-size: 23px;
     margin-bottom: 20px;
 }
+.backarrow{
+    width: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -80,6 +86,7 @@ label{
     font-family: hansen;
     color: #E0F9F0;
     font-size: 12px;
+    text-align: left;
 
   }
 input[type=submit] {
@@ -100,19 +107,28 @@ input[type=submit] {
 }
 
 @media(min-width:700px) {
- 
+ body{
+     padding: 100px;
+     padding-top: 0px;
+ }
  header{
      text-align: left;
-     margin-top: 50px;
      font-size: 40px;
      margin-bottom: 50px;
  }
  input[type=submit] {
-       text-align: right;
+       text-align: center;
        width: 90px;
        grid-area: con;
+       margin-left:auto;
 
   }
+  .backarrow{
+     margin-top: 50px;
+     width: 40px;
+     
+    
+}
     .gridnewsub{
      display: grid;
      grid-template-areas: 
@@ -122,7 +138,7 @@ input[type=submit] {
      'cli cda'
      '. con';
      grid-template-columns: 1fr 1fr;
-     grid-column-gap: 20px;
+     grid-column-gap: 50px;
      
 
  }
