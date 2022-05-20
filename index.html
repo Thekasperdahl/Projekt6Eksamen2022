@@ -129,7 +129,7 @@
             </div>
             <div class="scroll-div">
                 <div id="bar-container" class="scroll-object">
-                    <div class="latest-bar" id="myBtn2">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
                         <div class="sub-bars-name">Asana</div>
                         <div class="sub-bars-project">Abtion</div>
@@ -140,7 +140,7 @@
                         <p hidden class="modal-admin-name">placeholder</p>
                     </div>
                 
-                    <div class="latest-bar">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">AF</h6></div>
                         <div class="sub-bars-name">After Dark</div>
                         <div class="sub-bars-project">Storms A/S</div>
@@ -148,7 +148,7 @@
                         <p hidden class="sub-bars-cost">50
                     </div>
                 
-                    <div class="latest-bar">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">AN</h6></div>
                         <div class="sub-bars-name">Any Desk</div>
                         <div class="sub-bars-project">Mærsk A/S</div>
@@ -156,7 +156,7 @@
                         <p hidden class="sub-bars-cost">50
                     </div>
 
-                    <div class="latest-bar">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">BA</h6></div>
                         <div class="sub-bars-name">Bacula</div>
                         <div class="sub-bars-project">Repeat</div>
@@ -164,7 +164,7 @@
                         <p hidden class="sub-bars-cost">50
                     </div>
                 
-                    <div class="latest-bar">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">BO</h6></div>
                         <div class="sub-bars-name">Box Backup</div>
                         <div class="sub-bars-project">Fitness World</div>
@@ -172,7 +172,7 @@
                         <p hidden class="sub-bars-cost">50
                     </div>
 
-                    <div class="latest-bar">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
                         <div class="sub-bars-name">Creative Cloud</div>
                         <div class="sub-bars-project">Abtion</div>
@@ -180,7 +180,7 @@
                         <p hidden class="sub-bars-cost">50
                     </div>
 
-                    <div class="latest-bar">
+                    <div class="latest-bar myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
                         <div class="sub-bars-name">Creative Cloud</div>
                         <div class="sub-bars-project">Abtion</div>
@@ -305,14 +305,66 @@
                 </div>
         
                 <div class="cancel-alert-container">
-                    <a href="/cancel-overlay.html" id="red-cancel" ><p class="send-text">Cancel subscription</p></a>
-                    <a href="/alert-overlay.html" id="alert-admin"> <p class="send-text" id="myBtn3">Alert admin </p></a>
+                    <div id="red-cancel"><p class="send-text">Cancel subscription</p></div>
+                    <div id="alert-admin"><p class="send-text" id="test">Alert admin</p></div>
                 </div>
             </div>
 
+            <div id="alert-admin-parent">
+                <div class="alert-container">
+                    <p class="alert-overlay-toptekst">Are you sure you want to alert the admin?</p>
+                        <div class="alert-overlay-licens"> 
+                            <div class="thumbnail"></div>
+                        </div>
+                </div>
+        
+                <div class="knap-div">
+                    <div><img class="red-cross" src="assets/red-cross.png" alt="red cross"></div>
+                    <div id="confirmAlert"><img class="check-mark" src="assets/check-mark.png" alt="check mark"></div>
+                </div>
+            </div>
+
+
+            <div id="alert-admin-succes">
+                <div class="alert-container">
+                    <p class="alert-overlay-toptekst">Admin has been alerted</p>
+                    <div class="alert-overlay-licens"> 
+                        <div class="thumbnail"></div>
+                    </div>
+                </div>
+            
+                <div class="knap-div">
+                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
+                </div>
+            </div>
+
+            <div id="cancel-sub-parent">
+                <div class="alert-container">
+                    <p class="alert-overlay-toptekst">Are you sure you want to cancel this subscription?</p>
+                    <div class="alert-overlay-licens"> 
+                        <div class="thumbnail"></div>
+                    </div>
+                </div>
+        
+                <div class="knap-div">
+                    <div><img class="red-cross" src="assets/red-cross.png" alt="red cross"></div>
+                    <div id="confirmCancelSuccesButton"><img class="check-mark" src="assets/check-mark.png" alt="check mark"></div>
+                </div>
+            </div>
+
+            <div id="subCancelSuccesParent">
+                <div class="alert-container">
+                    <p class="alert-overlay-toptekst">The following subscription has been canceled</p>
+                       <div class="alert-overlay-licens"> 
+                           <div class="thumbnail"></div>
+                       </div>
+                </div>
+                   
+                <div class="knap-div">
+                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
+                </div>
+            </div>
         </div>
-
     </div>
-
 </body>
 </html>

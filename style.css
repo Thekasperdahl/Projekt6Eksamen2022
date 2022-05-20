@@ -15,7 +15,14 @@
 .alert-container{
     margin: auto;
     width: 330px;
-    padding: 10px;
+}
+
+#cancel-sub-parent {
+    display: none;
+}
+
+#subCancelSuccesParent {
+    display: none;
 }
 
 .alert-overlay-licens{
@@ -41,6 +48,15 @@
     size: 21px;
 }
 
+#alert-admin-parent {
+    display: none;
+}
+
+#alert-admin-succes {
+    display: none;
+    text-align: center;
+}
+
 .red-cross{
     background-color: #e07070;
     padding-top: 6px;
@@ -48,6 +64,8 @@
     padding-left: 67.5px;
     padding-right: 67.5px;
     border-radius: 30px;
+    margin-left: 35px;
+    margin-right: 5px;
 }
 
 .red-cross:hover{
@@ -62,6 +80,8 @@
     padding-left: 65px;
     padding-right: 65px;
     border-radius: 30px;
+    margin-right: 35px;
+    margin-left: 5px;
 }
 
 .check-mark:hover{
@@ -70,7 +90,10 @@
 }
 
 .knap-div{
-    text-align: center
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .check-mark-round{
