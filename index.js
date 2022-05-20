@@ -13,7 +13,7 @@ const subCount = document.getElementById("sub-count");
 const priceTag = document.getElementsByClassName("sub-bars-cost");
 const monthlyCost = document.getElementById("sub-cost");
 const bars = document.getElementsByClassName("latest-bar");
-console.log(bars);
+
 let barCounter = bars.length;
 let duplicates = [];
 
