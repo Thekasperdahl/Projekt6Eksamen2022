@@ -19,26 +19,6 @@ const subCost = document.getElementById("cost");
 //mail used for the admin of the sub(hidden)
 const yourMail = document.getElementById("ymail");
 
-//modal content id list
-
-//name of the sub, displayed in the top bar
-let modalBarName = document.getElementById("modalBarName");
-//support email
-let modalSupportEmail = document.getElementById("modalSupportEmail");
-//functionality of the sub
-let modalSubFunctionality = document.getElementById("modalSubFunctionality");
-//name of the admin, who created the sub
-let modalAdminName = document.getElementById("modalAdminName");
-//email of the admin, who created the sub
-let modalAdminEmail = document.getElementById("modalAdminEmail");
-//name of the client and or project the sub was created for
-let modalProjectClient = document.getElementById("modalProjectClient");
-//monthly price of the sub
-let modalPrice = document.getElementById("modalPrice");
-//the date of the sub creation
-let modalCreationDate = document.getElementById("modalCreationDate");
-
-
 addNewBtn.onclick = function(){addBar()};
 
 function addBar() {
@@ -48,6 +28,9 @@ function addBar() {
 
     let bar = document.createElement("div");
     bar.classList.add("latest-bar");
+    bar.classList.add("myBtn2");
+    myBtn2Array.push(bar);
+    openModal2();
 
     let thumbnail = document.createElement("div");
     thumbnail.classList.add("thumbnail");
@@ -110,6 +93,10 @@ function addBar() {
     barCounter++
     subCount.innerHTML = barCounter;
     checkDuplicates()
+
+    bar.addEventListener("click",function(){
+        modalFill(bar);
+    })
 }
 
 span.onclick = function() {
