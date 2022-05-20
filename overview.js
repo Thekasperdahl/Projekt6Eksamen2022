@@ -1,12 +1,12 @@
-let modal2 = document.getElementById("myModal2");
-let btn2 = document.querySelectorAll(".myBtn2");
-let span2 = document.getElementsByClassName("close2")[0];
-let adminAlert = document.getElementById("test");
-let closeModal = document.getElementById("closeModal");
-let alertAdminSucces = document.getElementById("alert-admin-succes");
-let confirmAlert = document.getElementById("confirmAlert");
-let cancelSub = document.getElementById("red-cancel");
-let cancelSubConfirm = document.getElementById("confirmCancelSuccesButton");
+const btn2 = document.querySelectorAll(".myBtn2");
+const span2 = document.getElementsByClassName("close2")[0];
+const adminAlert = document.getElementById("test");
+const modal2 = document.getElementById("myModal2");
+const closeModal = document.getElementById("closeModal");
+const alertAdminSucces = document.getElementById("alert-admin-succes");
+const confirmAlert = document.getElementById("confirmAlert");
+const cancelSub = document.getElementById("red-cancel");
+const cancelSubConfirm = document.getElementById("confirmCancelSuccesButton");
 
 [].forEach.call(btn2, function(el) {
     el.onclick = function() {
