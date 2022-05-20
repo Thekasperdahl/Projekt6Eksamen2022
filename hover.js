@@ -1,9 +1,11 @@
 //kodet af Kasper
 
-const hoverjs = ["#e07070", "#Efefef", "#E0F9F0", "#000000"];
+const hoverjs = ["#e07070", "#000000", "#E0F9F0"];
 
 for (let i = 0; i < hoverjs.length ; i++) {
 var hejsa = hoverjs[i];}
+
+console.log(hejsa)
 
 let box = document.getElementById('alert-admin');
 
@@ -38,7 +40,7 @@ adminBox.addEventListener('click', function onClick(){
   } 
   else 
   {
-    adminBox.style.color = hoverjs[3];
+    adminBox.style.color = hoverjs[1];
     adminClicked = false;
   }
 }); 
