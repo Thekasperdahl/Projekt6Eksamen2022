@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubPremo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="overview.js" defer></script>
     <script src="index.js" defer></script>
     <script src="form.js" defer></script>
+    <script src="hover.js" defer></script>
 </head>
 <body>
 
@@ -127,13 +129,15 @@
             </div>
             <div class="scroll-div">
                 <div id="bar-container" class="scroll-object">
-                    <div class="latest-bar">
+                    <div class="latest-bar" id="myBtn2">
                         <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
                         <div class="sub-bars-name">Asana</div>
                         <div class="sub-bars-project">Abtion</div>
                         <div class="sub-bars-date">04/04-2022</div>
-                        <!-- <h5 class="sorting">A</h5> -->
-                        <p hidden class="sub-bars-cost">50
+                        <p hidden class="sub-bars-cost">50</p>
+                        <p hidden class="modal-support-email">placeholder</p>
+                        <p hidden class="modal-sub-desc">placeholder</p>
+                        <p hidden class="modal-admin-name">placeholder</p>
                     </div>
                 
                     <div class="latest-bar">
@@ -157,7 +161,6 @@
                         <div class="sub-bars-name">Bacula</div>
                         <div class="sub-bars-project">Repeat</div>
                         <div class="sub-bars-date">02/10-2020</div>
-                        <!-- <h5 class="sorting">B</h5> -->
                         <p hidden class="sub-bars-cost">50
                     </div>
                 
@@ -174,7 +177,6 @@
                         <div class="sub-bars-name">Creative Cloud</div>
                         <div class="sub-bars-project">Abtion</div>
                         <div class="sub-bars-date">01/01-2016</div>
-                        <!-- <h5 class="sorting">C</h5> -->
                         <p hidden class="sub-bars-cost">50
                     </div>
 
@@ -268,5 +270,49 @@
             </div>
         </div>  
     </div>
+
+    <!-- The Modal2 -->
+    <div id="myModal2" class="modal2">
+
+        <!-- Modal2 content -->
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+        
+            <div class="oversigt-container">
+
+                <div class="alert-overlay-licens">
+                    <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
+                    <div class="overlay-bar-name">Asana</div>
+                </div>
+        
+                <div class="info-tekst-container">
+                    <img src="/assets/info-i.png" alt="informations ikon" class="info-ikon">
+                        <p class="email-oversigt">asana@support.com</p>
+                        <p class="Functionallity-oversigt">Wordpress plugin, used for shop structure</p>
+                </div>
+        
+                <div id="admin-oversigt">
+                    <img src="/assets/calender.png" alt="Kalender png" class="kalender-ikon">
+                    <p class="admin-name">Bo Kønskov</p>
+                    <p class="admin-email">bk@abtion.com</p>
+                    <p class="project-name">Fitness World</p>
+                </div>
+        
+                <div class="budget-container">
+                    <img src="/assets/money.png" alt="dollar bill icon" class="money-ikon">
+                    <p class="price-month">199.95</p>
+                    <p class="overview-sub-date">04/04-2022</p>
+                </div>
+        
+                <div class="cancel-alert-container">
+                    <a href="/cancel-overlay.html" id="red-cancel" ><p class="send-text">Cancel subscription</p></a>
+                    <a href="/alert-overlay.html" id="alert-admin"> <p class="send-text" id="myBtn3">Alert admin </p></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

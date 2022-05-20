@@ -10,6 +10,243 @@
     src: url(fonts/calibri.ttf);
 }
 
+/* Kasper */
+
+.alert-container{
+    margin: auto;
+    width: 330px;
+    padding: 10px;
+}
+
+.alert-overlay-licens{
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.overlay-bar-name {
+    font-family: hansen;
+    margin-left: 10px;
+}
+
+.alert-overlay-toptekst{
+    color: #E0F9F0;
+    font-family: 'Calibri';
+    text-align: center;
+    size: 21px;
+}
+
+.red-cross{
+    background-color: #e07070;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 67.5px;
+    padding-right: 67.5px;
+    border-radius: 30px;
+}
+
+.red-cross:hover{
+    background-color: #DF9791;
+    transition: ease-in 0.2s;
+}
+
+.check-mark{
+    background-color: #E0F9F0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border-radius: 30px;
+}
+
+.check-mark:hover{
+    background-color: #bfdece;
+    transition: ease-in 0.2s;
+}
+
+.knap-div{
+    text-align: center
+}
+
+.check-mark-round{
+    background-color: #E0F9F0;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%;
+}
+
+.check-mark-round:hover{
+    background-color: #F2D7CA;
+    transition: ease-in 0.2s;
+}
+
+.oversigt-container{
+    margin: auto;
+    max-width: 330px;
+    padding: 10px;
+}
+
+.info-ikon{
+    grid-area: infoi;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.email-oversigt{
+    margin: 7px;
+    grid-area: infotekst;
+}
+
+.info-tekst-container{
+    display: grid;
+    grid-template-columns: .35fr 2fr;
+    grid-template-areas:
+    "infoi infotekst"
+    ". funktext";
+    background-color: #cbebdb;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.Functionallity-oversigt{
+    margin: 7px;
+    margin-top: 0px;
+    font-family: 'Calibri';
+    grid-area: funktext;
+}
+
+#admin-oversigt{
+    display: grid;
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    grid-template-columns: .35fr 2fr;
+    grid-template-areas: 
+    "kalikon admnam"
+    ". admail"
+    ". pname";
+    margin-bottom: 10px;
+}
+
+.kalender-ikon{
+    padding-top: 5px;
+    padding-left: 12px;
+    grid-area: kalikon;
+}
+
+.admin-name{
+    grid-area: admnam;
+    margin: 7px;
+    margin-bottom: 0px;
+}
+
+.admin-email{
+    font-family: "calibri";
+    grid-area: admail;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.project-name{
+    font-family: "calibri";
+    grid-area: pname;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.budget-container{
+    display: grid;
+    background-color: #cbebdb;
+    border-radius: 15px;
+    grid-template-columns: .35fr 2fr;
+    margin-bottom: 10px;
+    grid-template-areas: 
+    "monikon pmonth"
+    ". sudate"
+    ;
+}
+
+.money-ikon{
+    padding-top: 5px;
+    padding-left: 12px;
+    grid-area: monikon;
+}
+
+.price-month{
+    margin: 7px;
+    margin-bottom: 0px;
+    grid-area: pmonth;
+    font-family: "calibri";
+}
+
+.price-month::after {
+    content: "/month";
+}
+
+.overview-sub-date{
+    font-family: "Calibri";
+    grid-area: sudate;
+    margin: 7px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.cancel-alert-container{
+    display: grid;
+    grid-column-gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "alert cancelsub"
+    ;
+}
+
+#red-cancel{
+    background-color: #e07070;
+    border-radius: 30px;
+    grid-area: cancelsub;
+    margin: 1;
+    color: #000000;
+    text-decoration: none;
+}
+
+#red-cancel:hover{
+    background-color: #000000;
+    transition: ease-in 0.2s;
+}
+
+#alert-admin{
+    background-color: #E0F9F0;
+    border-radius: 30px;
+    grid-area: alert;
+    color: #000000;
+    text-decoration: none;
+}
+
+#alert-admin:hover{
+    background-color: #000000;
+    transition: ease-in 0.2s;
+}
+
+.send-text{
+    font-family: "Calibri";
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kasper */
+
 .duplicates-headline {
     display: none;
 }
@@ -73,7 +310,6 @@ body {
     margin: 0;
     padding-left: 40px;
     padding-right: 40px;
-    text-align: center;
 }
 
 #sub-cost::after {
@@ -225,6 +461,7 @@ body {
     background-color: #DF9791;
     border-radius: 10px;
     margin-left: 10px;
+    text-align: center;
 }
 
 .thumbnail-text {
@@ -696,3 +933,44 @@ label{
 }
 
 /* Søren */
+
+
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content2 {
+    background-color: #36244D;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    border-radius: 15px;
+    border-width: 0px;
+  }
+  
+  /* The Close Button */
+  .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
