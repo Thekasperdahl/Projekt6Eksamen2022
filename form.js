@@ -22,15 +22,21 @@ const yourMail = document.getElementById("ymail");
 addNewBtn.onclick = function(){addBar()};
 
 function addBar() {
+    //takes monthlyCost const from index.js, and goes into the inner text of the ID
     let cost = monthlyCost.innerText;
+    //adds the cost of the 7 bars together with the newly pushed cost of a newly added bar
+    //parsefloat turns string into numbers
     let newCost = parseFloat(cost) + parseFloat(subCost.value);
     monthlyCost.innerText = newCost;
 
+    //creates variable "bar" and adds the ability to create a div
     let bar = document.createElement("div");
+    //adds the class "latest-bar" to newly created div
     bar.classList.add("latest-bar");
-    bar.classList.add("myBtn2");
+    //adds newly created bar to myBtn2Array on line 2 in overview.js, so that it can open a modal
     myBtn2Array.push(bar);
-    openModal2();
+    //adds onclick function to open the modal2, on the new bar
+    applyOnclickForModal2();
 
     let thumbnail = document.createElement("div");
     thumbnail.classList.add("thumbnail");
