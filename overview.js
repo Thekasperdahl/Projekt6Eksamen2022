@@ -80,7 +80,6 @@ cancelSubConfirm.onclick = function cancelSubConfirm() {
 }
 
 function modalFill(bar) {
-  console.log(bar.children);
   modalThumbnailText.innerHTML = bar.children[0].innerHTML;
   modalBarName.innerHTML = bar.children[1].innerHTML;
   modalSupportEmail.innerHTML = bar.children[6].innerHTML;
