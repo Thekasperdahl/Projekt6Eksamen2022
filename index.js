@@ -58,8 +58,8 @@ for (let c = 0; c < priceTag.length; c++) {
   //???
     const element = priceTag[c];
 
-    //converts priceTag array innerHTML into numbers, and adds them together
-    sum += parseFloat(priceTag[c].innerHTML);
+  //converts priceTag array innerHTML into numbers, and adds them together
+  sum += parseFloat(priceTag[c].innerHTML);
 }
 
 monthlyCost.innerHTML = sum;
