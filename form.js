@@ -19,7 +19,9 @@ const subCost = document.getElementById("cost");
 //mail used for the admin of the sub(hidden)
 const yourMail = document.getElementById("ymail");
 
-addNewBtn.onclick = function(){addBar()};
+addNewBtn.onclick = function(){
+    addBar()
+};
 
 function addBar() {
     let cost = monthlyCost.innerText;
@@ -84,7 +86,6 @@ function addBar() {
     hiddenAdminMail.style.display = "none";
     hiddenAdminMail.innerHTML = yourMail.value;
     bar.append(hiddenAdminMail);
-    
     //hidden elements
 
     container.append(bar);
