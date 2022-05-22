@@ -14,7 +14,9 @@ const priceTag = document.getElementsByClassName("sub-bars-cost");
 const monthlyCost = document.getElementById("sub-cost");
 const bars = document.getElementsByClassName("latest-bar");
 
+//creates an array from all the divs that has the class "lates-bar" applied
 let barCounter = bars.length;
+
 let duplicates = [];
 
 function checkDuplicates(){
@@ -25,6 +27,7 @@ function checkDuplicates(){
         for (let j = 0; j < bars.length; j++) {
             let nextBar = bars[j];
     
+            //if currentBar is not the same as nextBar but the child[1].innerText(name) is the same, apply this style:
             if (currentBar != nextBar && currentBar.children[1].innerText == nextBar.children[1].innerText) {
               currentBar.style.backgroundColor = "#EDE5AF";
               nextBar.style.backgroundColor = "#EDE5AF";
@@ -48,11 +51,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 let sum = 0;
 
 for (let c = 0; c < priceTag.length; c++) {
+  //???
     const element = priceTag[c];
 
+    //converts priceTag array innerHTML into numbers, and adds them together
     sum += parseFloat(priceTag[c].innerHTML);
 }
 

@@ -40,18 +40,27 @@ function addBar() {
     //adds onclick function to open the modal2, on the new bar
     applyOnclickForModal2();
 
+
+    //creates variabl "thumbnail" and gives the ability to create an "div"
     let thumbnail = document.createElement("div");
+    //applies the class "thumbnail" when the div is created
     thumbnail.classList.add("thumbnail");
+    //appends the variable "thumbnail (child)" to the variable "bar"(parent)
     bar.append(thumbnail);
 
+    //same logic as above
     let barName = document.createElement("div");
     barName.classList.add("sub-bars-name");
+    //takes the input value of const "subName", at puts it as the innerHTML
     barName.innerHTML = subName.value;
     bar.append(barName);
 
+
     let thumbnailText = document.createElement("h6");
-    thumbnailText.classList.add("thumbnail-text");    
+    thumbnailText.classList.add("thumbnail-text");  
+    //if subName input value isn't empty, then "run this"  
     if (subName.value !== "") {
+        //creates an array of letters from the subName and display the first two in uppercasing
         let tempName = subName.value.split("");
         thumbnailText.innerHTML = tempName[0].toUpperCase() + tempName[1].toUpperCase();
     }
@@ -68,6 +77,7 @@ function addBar() {
     bar.append(barDate);
 
     //hidden elements
+    //same logic, but creates a hidden "p" on the newly created bar
     let hiddenUserName = document.createElement("p");
     hiddenUserName.style.display = "none";
     hiddenUserName.innerHTML = yourName.value;
@@ -94,18 +104,23 @@ function addBar() {
     bar.append(hiddenAdminMail);
     //hidden elements
 
+    //inserts the newly created bar, into the container that holds all bars
     container.append(bar);
+    //"closes" the modal used to insert values for the new bar
     modal.style.display = "none";
 
+    //increases the barCounter array with one, and puts it in the innerHTML of the subCount
     barCounter++
     subCount.innerHTML = barCounter;
     checkDuplicates()
 
+    
     bar.addEventListener("click",function(){
         modalFill(bar);
     })
 }
 
+//closes the modal when clicking anywhere else on the screen
 span.onclick = function() {
     modal.style.display = "none";
   }

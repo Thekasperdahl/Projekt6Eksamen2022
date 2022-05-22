@@ -82,11 +82,11 @@ cancelSubConfirm.onclick = function cancelSubConfirm() {
 function modalFill(bar) {
   modalThumbnailText.innerHTML = bar.children[0].innerHTML;
   modalBarName.innerHTML = bar.children[1].innerHTML;
-  modalSupportEmail.innerHTML = bar.children[6].innerHTML;
-  modalSubFunctionality.innerHTML = bar.children[5].innerHTML;
-  modalAdminName.innerHTML = bar.children[4].innerHTML;
-  modalAdminEmail.innerHTML = bar.children[8].innerHTML;
   modalProjectClient.innerHTML = bar.children[2].innerHTML;
-  modalPrice.innerHTML = bar.children[7].innerHTML;
   modalCreationDate.innerHTML = bar.children[3].innerHTML;
+  modalAdminName.innerHTML = bar.children[4].innerHTML;
+  modalSubFunctionality.innerHTML = bar.children[5].innerHTML;
+  modalSupportEmail.innerHTML = bar.children[6].innerHTML;
+  modalPrice.innerHTML = bar.children[7].innerHTML;
+  modalAdminEmail.innerHTML = bar.children[8].innerHTML;
 }
