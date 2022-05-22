@@ -36,7 +36,7 @@ const modalPrice = document.getElementById("modalPrice");
 const modalCreationDate = document.getElementById("modalCreationDate");
 
 
-function openModal2() {
+function applyOnclickForModal2() {
   [].forEach.call(myBtn2Array, function(el) {
       el.onclick = function() {
         modalFill(el);
@@ -45,7 +45,7 @@ function openModal2() {
     })
 }
 
-openModal2();
+applyOnclickForModal2();
 
 span2.onclick = function() {
   modal2.style.display = "none";
@@ -80,7 +80,6 @@ cancelSubConfirm.onclick = function cancelSubConfirm() {
 }
 
 function modalFill(bar) {
-  console.log(bar.children);
   modalThumbnailText.innerHTML = bar.children[0].innerHTML;
   modalBarName.innerHTML = bar.children[1].innerHTML;
   modalSupportEmail.innerHTML = bar.children[6].innerHTML;
