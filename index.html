@@ -1,395 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SubPremo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="overview.js" defer></script>
     <script src="index.js" defer></script>
     <script src="form.js" defer></script>
     <script src="hover.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1 class="header-text">Dashboard</h1>
+      <h1 class="header-text">Dashboard</h1>
     </header>
 
     <div class="desktop-grid">
-        <div class="container-a">
-            <button id="open-modal-btn" class="add-new">
-                <div class="plus-icon">&plus;</div>
-                <p class="add-new-text"> Add new </p>
-            </button>
+      <div class="container-a">
+        <button id="open-modal-btn" class="add-new">
+          <div class="plus-icon">&plus;</div>
+          <p class="add-new-text">Add new</p>
+        </button>
 
-            <div class="info-box">
-                <h2>Sub count:</h2>
-                <div id="sub-count" class="info-box-out">test</div>
-                <h2>Cost/Month:</h2>
-                <div id="sub-cost" class="info-box-out">test</div>
-            </div>
+        <div class="info-box">
+          <h2>Sub count:</h2>
+          <div id="sub-count" class="info-box-out">test</div>
+          <h2>Cost/Month:</h2>
+          <div id="sub-cost" class="info-box-out">test</div>
+        </div>
+      </div>
+
+      <div class="container-duplicates">
+        <h3 class="duplicates-text">Duplicates</h3>
+        <h3 class="date-text">Date</h3>
+      </div>
+
+      <h3 class="duplicates-headline">Duplicates</h3>
+
+      <div class="scroll-bg-duplicates">
+        <div class="dup-headline">
+          <h3>Name</h3>
+          <h3>Date</h3>
         </div>
 
-
-
-
-
-
-        <div class="container-duplicates">
-            <h3 class="duplicates-text">Duplicates</h3>
-            <h3 class="date-text">Date</h3>
-        </div>
-
-        <h3 class="duplicates-headline">Duplicates</h3>
-
-        <div class="scroll-bg-duplicates">
-
-            <div class="dup-headline">
-                <h3>Name</h3>
-                <h3>Date</h3>
+        <div class="scroll-div-latest">
+          <div class="scroll-object">
+            <div class="duplicate-bars">
+              <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
+              <div class="duplicate-bars-name"><p>Creative Cloud</p></div>
+              <div class="duplicate-bars-date"><p>01/01-2016</p></div>
             </div>
 
-            <div class="scroll-div-latest">
-                <div class="scroll-object">
-
-                    <div class="duplicate-bars">
-                        <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
-                        <div class="duplicate-bars-name"><p>Creative Cloud</p></div>
-                        <div class="duplicate-bars-date"><p>01/01-2016</p></div>
-                    </div>
-                    
-                    <div class="duplicate-bars">
-                        <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
-                        <div class="duplicate-bars-name"><p>Creative Cloud</p></div>
-                        <div class="duplicate-bars-date"><p>03/10-2020</p></div>
-                    </div>
-                </div>
+            <div class="duplicate-bars">
+              <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
+              <div class="duplicate-bars-name"><p>Creative Cloud</p></div>
+              <div class="duplicate-bars-date"><p>03/10-2020</p></div>
             </div>
+          </div>
         </div>
+      </div>
 
+      <div class="container-latest">
+        <h3>Latest</h3>
+        <h3>Date</h3>
+      </div>
 
+      <h3 class="latest-headline">Latest</h3>
 
-
-
-
-
-        <div class="container-latest">
-            <h3>Latest</h3>
-            <h3>Date</h3>
+      <div class="scroll-bg-latest">
+        <div class="dup-headline">
+          <h3>Name</h3>
+          <h3>Date</h3>
         </div>
-
-        <h3 class="latest-headline">Latest</h3>
-
-        <div class="scroll-bg-latest">
-            <div class="dup-headline">
-                <h3>Name</h3>
-                <h3>Date</h3>
+        <div class="scroll-div-latest">
+          <div class="scroll-object">
+            <div class="latest-bars-right-1">
+              <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
+              <div class="duplicate-bars-name"><p>Asana</p></div>
+              <div class="duplicate-bars-date"><p>04/04-2022</p></div>
             </div>
-            <div class="scroll-div-latest">
-                <div class="scroll-object">
 
-                    <div class="latest-bars-right-1">
-                        <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
-                        <div class="duplicate-bars-name"><p>Asana</p></div>
-                        <div class="duplicate-bars-date"><p>04/04-2022</p></div>
-                    </div>
-                
-                    <div class="latest-bars-right-2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">AF</h6></div>
-                        <div class="duplicate-bars-name"><p>After Dark</p></div>
-                        <div class="duplicate-bars-date"><p>04/04-2022</p></div>
-                    </div>
-                
-                    <div class="latest-bars-right-1">
-                        <div class="thumbnail"><h6 class="thumbnail-text">BA</h6></div>
-                        <div class="duplicate-bars-name"><p>Bacula</p></div>
-                        <div class="duplicate-bars-date"><p>04/04-2022</p></div>
-                    </div>
-                </div>
+            <div class="latest-bars-right-2">
+              <div class="thumbnail"><h6 class="thumbnail-text">AF</h6></div>
+              <div class="duplicate-bars-name"><p>After Dark</p></div>
+              <div class="duplicate-bars-date"><p>04/04-2022</p></div>
             </div>
-        </div>
 
-
-
-
-
-
-        <div class="container-subs">
-            <h3>Subscriptions</h3>
-            <h3>Date</h3>
-        </div>
-
-        <div class="scroll-bg-sub">
-            <div class="sub-headline">
-                <h3>Name</h3>
-                <h3 class="project-client-headline">Project/Client</h3>
-                <h3>Date</h3>
+            <div class="latest-bars-right-1">
+              <div class="thumbnail"><h6 class="thumbnail-text">BA</h6></div>
+              <div class="duplicate-bars-name"><p>Bacula</p></div>
+              <div class="duplicate-bars-date"><p>04/04-2022</p></div>
             </div>
-            <div class="scroll-div">
-                <div id="bar-container" class="scroll-object">
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
-                        <div class="sub-bars-name">Asana</div>
-                        <div class="sub-bars-project">Abtion</div>
-                        <div class="sub-bars-date">04/04-2022</div>
-                        <p hidden>Asana Søren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-                
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">AF</h6></div>
-                        <div class="sub-bars-name">After Dark</div>
-                        <div class="sub-bars-project">Storms A/S</div>
-                        <div class="sub-bars-date">03/07-2021</div>
-                        <p hidden>After DarkSøren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-                
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">AN</h6></div>
-                        <div class="sub-bars-name">Any Desk</div>
-                        <div class="sub-bars-project">Mærsk A/S</div>
-                        <div class="sub-bars-date">21/04-2019</div>
-                        <p hidden>Any Desk Søren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">BA</h6></div>
-                        <div class="sub-bars-name">Bacula</div>
-                        <div class="sub-bars-project">Repeat</div>
-                        <div class="sub-bars-date">02/10-2020</div>
-                        <p hidden>Bacula Søren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-                
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">BO</h6></div>
-                        <div class="sub-bars-name">Box Backup</div>
-                        <div class="sub-bars-project">Fitness World</div>
-                        <div class="sub-bars-date">01/02-2017</div>
-                        <p hidden>Box Backup Søren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
-                        <div class="sub-bars-name">Creative Cloud</div>
-                        <div class="sub-bars-project">Abtion</div>
-                        <div class="sub-bars-date">01/01-2016</div>
-                        <p hidden>Creative Cloud Søren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-
-                    <div class="latest-bar myBtn2">
-                        <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
-                        <div class="sub-bars-name">Creative Cloud</div>
-                        <div class="sub-bars-project">Abtion</div>
-                        <div class="sub-bars-date">03/10-2020</div>
-                        <p hidden>Creative Cloud Søren</p>
-                        <p hidden>Functionality</p>
-                        <p hidden>Your mail</p>
-                        <p hidden class="sub-bars-cost">50</p>
-                        <p hidden>support mail</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container-subs">
+        <h3>Subscriptions</h3>
+        <h3>Date</h3>
+      </div>
+
+      <div class="scroll-bg-sub">
+        <div class="sub-headline">
+          <h3>Name</h3>
+          <h3 class="project-client-headline">Project/Client</h3>
+          <h3>Date</h3>
+        </div>
+        <div class="scroll-div">
+          <div id="bar-container" class="scroll-object">
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">AS</h6></div>
+              <div class="sub-bars-name">Asana</div>
+              <div class="sub-bars-project">Abtion</div>
+              <div class="sub-bars-date">04/04-2022</div>
+              <p hidden>Asana Søren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">AF</h6></div>
+              <div class="sub-bars-name">After Dark</div>
+              <div class="sub-bars-project">Storms A/S</div>
+              <div class="sub-bars-date">03/07-2021</div>
+              <p hidden>After DarkSøren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">AN</h6></div>
+              <div class="sub-bars-name">Any Desk</div>
+              <div class="sub-bars-project">Mærsk A/S</div>
+              <div class="sub-bars-date">21/04-2019</div>
+              <p hidden>Any Desk Søren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">BA</h6></div>
+              <div class="sub-bars-name">Bacula</div>
+              <div class="sub-bars-project">Repeat</div>
+              <div class="sub-bars-date">02/10-2020</div>
+              <p hidden>Bacula Søren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">BO</h6></div>
+              <div class="sub-bars-name">Box Backup</div>
+              <div class="sub-bars-project">Fitness World</div>
+              <div class="sub-bars-date">01/02-2017</div>
+              <p hidden>Box Backup Søren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
+              <div class="sub-bars-name">Creative Cloud</div>
+              <div class="sub-bars-project">Abtion</div>
+              <div class="sub-bars-date">01/01-2016</div>
+              <p hidden>Creative Cloud Søren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+
+            <div class="latest-bar myBtn2">
+              <div class="thumbnail"><h6 class="thumbnail-text">CR</h6></div>
+              <div class="sub-bars-name">Creative Cloud</div>
+              <div class="sub-bars-project">Abtion</div>
+              <div class="sub-bars-date">03/10-2020</div>
+              <p hidden>Creative Cloud Søren</p>
+              <p hidden>Functionality</p>
+              <p hidden>Your mail</p>
+              <p hidden class="sub-bars-cost">50</p>
+              <p hidden>support mail</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
+        <header>Add new subscription</header>
 
-            <header>Add new subscription</header>
+        <form
+          class="gridnewsub"
+          name="subForm"
+          onsubmit="return validateForm()"
+        >
+          <label for="sname"
+            >Subscription name
+            <input
+              type="text"
+              id="sname"
+              name="subsribtionname"
+              placeholder="Slack"
+            />
+          </label>
 
-            <div class="gridnewsub">
+          <label for="funct"
+            >Functionality
+            <input
+              type="text"
+              id="funct"
+              name="functionality"
+              placeholder="used for communication etc."
+            />
+          </label>
 
-                <label for="sname">Subscription name
-                    <input
-                    type="text"
-                    id="sname"
-                    name="subsribtionname"
-                    placeholder="Slack"
-                    />
-                </label>
+          <label for="smail"
+            >Subscription support-mail
+            <input
+              type="text"
+              id="smail"
+              name="supportmail"
+              placeholder="example@support.com"
+            />
+          </label>
 
-                <label for="funct">Functionality
-                    <input
-                    type="text"
-                    id="funct"
-                    name="functionality"
-                    placeholder="used for communication etc."
-                    />
-                </label>
+          <label for="cost"
+            >Monthly cost in DKK
+            <input
+              type="text"
+              id="cost"
+              name="monthlycost"
+              placeholder="299.95"
+            />
+          </label>
 
-                <label for="smail">Subscription support-mail
-                    <input
-                    type="text"
-                    id="smail"
-                    name="supportmail"
-                    placeholder="example@support.com"
-                    />
-                </label>
+          <label for="yname"
+            >Your name
+            <input
+              type="text"
+              id="yname"
+              name="yourname"
+              placeholder="Michael Surname"
+            />
+          </label>
 
-                <label for="cost">Monthly cost in DKK
-                    <input type="text" id="cost" name="monthlycost" placeholder="299.95"/>
-                </label>
+          <label for="ymail"
+            >Mail used for subscription
+            <input
+              type="text"
+              id="ymail"
+              name="yourmail"
+              placeholder="yourmail@example.com"
+            />
+          </label>
 
-                <label for="yname">Your name
-                    <input
-                    type="text"
-                    id="yname"
-                    name="yourname"
-                    placeholder="Michael Surname"
-                    />
-                </label>
+          <label for="client"
+            >Project/Client
+            <input
+              type="text"
+              id="client"
+              name="project/client"
+              placeholder="company A/S"
+            />
+          </label>
 
-                <label for="ymail">Mail used for subscription
-                    <input
-                    type="text"
-                    id="ymail"
-                    name="yourmail"
-                    placeholder="yourmail@example.com"
-                    />
-                </label>
+          <label for="cdate"
+            >Creation date
+            <input
+              type="text"
+              id="cdate"
+              name="creationdate"
+              placeholder="dd/mm-yyyy"
+            />
+          </label>
 
-                <label for="client">Project/Client
-                    <input
-                    type="text"
-                    id="client"
-                    name="project/client"
-                    placeholder="company A/S"
-                    />
-                </label>
-
-                <label for="cdate">Creation date
-                    <input type="text" id="cdate" name="creationdate" placeholder="dd/mm-yyyy"/>
-                </label>
-
-                <button class="button" id="add-bar-btn" onclick="returnText()">Confirm</button>
-            </div>
-        </div>  
+          <button class="button">Confirm</button>
+        </form>
+      </div>
     </div>
 
     <!-- The Modal2 -->
     <div id="myModal2" class="modal2">
+      <!-- Modal2 content -->
+      <div class="modal-content2">
+        <span class="close2">&times;</span>
 
-        <!-- Modal2 content -->
-        <div class="modal-content2">
-            <span class="close2">&times;</span>
-        
-            <div class="oversigt-container">
-
-                <div class="alert-overlay-licens">
-                    <div class="thumbnail"><h6 id="modalThumbnailText" class="thumbnail-text">AS</h6></div>
-                    <div id="modalBarName" class="overlay-bar-name">Asana</div>
-                </div>
-        
-                <div class="info-tekst-container">
-                    <img src="/assets/info-i.png" alt="informations ikon" class="info-ikon">
-                        <p id="modalSupportEmail" class="email-oversigt">asana@support.com</p>
-                        <p id="modalSubFunctionality" class="Functionallity-oversigt">Wordpress plugin, used for shop structure</p>
-                </div>
-        
-                <div id="admin-oversigt">
-                    <img src="/assets/calender.png" alt="Kalender png" class="kalender-ikon">
-                    <p id="modalAdminName" class="admin-name">Bo Kønskov</p>
-                    <p id="modalAdminEmail" class="admin-email">bk@abtion.com</p>
-                    <p id="modalProjectClient" class="project-name">Fitness World</p>
-                </div>
-        
-                <div class="budget-container">
-                    <img src="/assets/money.png" alt="dollar bill icon" class="money-ikon">
-                    <p id="modalPrice" class="price-month">199.95</p>
-                    <p id="modalCreationDate" class="overview-sub-date">04/04-2022</p>
-                </div>
-        
-                <div class="cancel-alert-container">
-                    <div id="red-cancel"><p class="send-text">Cancel subscription</p></div>
-                    <div id="alert-admin"><p class="send-text" id="test">Alert admin</p></div>
-                </div>
+        <div class="oversigt-container">
+          <div class="alert-overlay-licens">
+            <div class="thumbnail">
+              <h6 id="modalThumbnailText" class="thumbnail-text">AS</h6>
             </div>
+            <div id="modalBarName" class="overlay-bar-name">Asana</div>
+          </div>
 
-            <div id="alert-admin-parent">
-                <div class="alert-container">
-                    <p class="alert-overlay-toptekst">Are you sure you want to alert the admin?</p>
-                        <div class="alert-overlay-licens"> 
-                            <div class="thumbnail"></div>
-                        </div>
-                </div>
-        
-                <div class="knap-div">
-                    <div><img class="red-cross" src="assets/red-cross.png" alt="red cross"></div>
-                    <div id="confirmAlert"><img class="check-mark" src="assets/check-mark.png" alt="check mark"></div>
-                </div>
+          <div class="info-tekst-container">
+            <img
+              src="assets/info-i.png"
+              alt="informations ikon"
+              class="info-ikon"
+            />
+            <p id="modalSupportEmail" class="email-oversigt">
+              asana@support.com
+            </p>
+            <p id="modalSubFunctionality" class="Functionallity-oversigt">
+              Wordpress plugin, used for shop structure
+            </p>
+          </div>
+
+          <div id="admin-oversigt">
+            <img
+              src="assets/calender.png"
+              alt="Kalender png"
+              class="kalender-ikon"
+            />
+            <p id="modalAdminName" class="admin-name">Bo Kønskov</p>
+            <p id="modalAdminEmail" class="admin-email">bk@abtion.com</p>
+            <p id="modalProjectClient" class="project-name">Fitness World</p>
+          </div>
+
+          <div class="budget-container">
+            <img
+              src="assets/money.png"
+              alt="dollar bill icon"
+              class="money-ikon"
+            />
+            <p id="modalPrice" class="price-month">199.95</p>
+            <p id="modalCreationDate" class="overview-sub-date">04/04-2022</p>
+          </div>
+
+          <div class="cancel-alert-container">
+            <div id="red-cancel">
+              <p class="send-text">Cancel subscription</p>
             </div>
-
-
-            <div id="alert-admin-succes">
-                <div class="alert-container">
-                    <p class="alert-overlay-toptekst">Admin has been alerted</p>
-                    <div class="alert-overlay-licens"> 
-                        <div class="thumbnail"></div>
-                    </div>
-                </div>
-            
-                <div class="knap-div">
-                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
-                </div>
+            <div id="alert-admin">
+              <p class="send-text" id="test">Alert admin</p>
             </div>
-
-            <div id="cancel-sub-parent">
-                <div class="alert-container">
-                    <p class="alert-overlay-toptekst">Are you sure you want to cancel this subscription?</p>
-                    <div class="alert-overlay-licens"> 
-                        <div class="thumbnail"></div>
-                    </div>
-                </div>
-        
-                <div class="knap-div">
-                    <div><img class="red-cross" src="assets/red-cross.png" alt="red cross"></div>
-                    <div id="confirmCancelSuccesButton"><img class="check-mark" src="assets/check-mark.png" alt="check mark"></div>
-                </div>
-            </div>
-
-            <div id="subCancelSuccesParent">
-                <div class="alert-container">
-                    <p class="alert-overlay-toptekst">The following subscription has been canceled</p>
-                       <div class="alert-overlay-licens"> 
-                           <div class="thumbnail"></div>
-                       </div>
-                </div>
-                   
-                <div class="knap-div">
-                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div id="alert-admin-parent">
+          <div class="alert-container">
+            <p class="alert-overlay-toptekst">
+              Are you sure you want to alert the admin?
+            </p>
+            <div class="alert-overlay-licens">
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+
+          <div class="knap-div">
+            <div>
+              <img
+                class="red-cross"
+                src="assets/red-cross.png"
+                alt="red cross"
+              />
+            </div>
+            <div id="confirmAlert">
+              <img
+                class="check-mark"
+                src="assets/check-mark.png"
+                alt="check mark"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="alert-admin-succes">
+          <div class="alert-container">
+            <p class="alert-overlay-toptekst">Admin has been alerted</p>
+            <div class="alert-overlay-licens">
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+
+          <div class="knap-div">
+            <a href="#"
+              ><img
+                class="check-mark-round"
+                src="assets/check-mark.png"
+                alt="check mark"
+            /></a>
+          </div>
+        </div>
+
+        <div id="cancel-sub-parent">
+          <div class="alert-container">
+            <p class="alert-overlay-toptekst">
+              Are you sure you want to cancel this subscription?
+            </p>
+            <div class="alert-overlay-licens">
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+
+          <div class="knap-div">
+            <div>
+              <img
+                class="red-cross"
+                src="assets/red-cross.png"
+                alt="red cross"
+              />
+            </div>
+            <div id="confirmCancelSuccesButton">
+              <img
+                class="check-mark"
+                src="assets/check-mark.png"
+                alt="check mark"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="subCancelSuccesParent">
+          <div class="alert-container">
+            <p class="alert-overlay-toptekst">
+              The following subscription has been canceled
+            </p>
+            <div class="alert-overlay-licens">
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+
+          <div class="knap-div">
+            <a href="#"
+              ><img
+                class="check-mark-round"
+                src="assets/check-mark.png"
+                alt="check mark"
+            /></a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

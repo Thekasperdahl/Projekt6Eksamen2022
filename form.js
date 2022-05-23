@@ -19,10 +19,116 @@ const subCost = document.getElementById("cost");
 //mail used for the admin of the sub(hidden)
 const yourMail = document.getElementById("ymail");
 
-addNewBtn.onclick = function(){
-    addBar()
-};
+// staal start
+    function validateForm(){
+    let sbn = document.forms["subForm"]["subsribtionname"].value;
+    if (sbn == "") {
+      document.getElementById("sname").style.borderColor = "red";
+      return false;
+      
+    }
+    else {
+        document.getElementById("sname").style.borderColor = "#47385D";
+        functvali();
+        return false;
+    }}
 
+    function functvali(){
+        let fun = document.forms["subForm"]["functionality"].value;
+        if (fun == "") {
+            document.getElementById("funct").style.borderColor = "red";
+          return false;
+          
+        }
+        else {
+            document.getElementById("funct").style.borderColor = "#47385D";
+            smailvali();
+            return false;
+        }}
+
+    function smailvali(){
+        let sma = document.forms["subForm"]["supportmail"].value;
+        if (sma == "") {
+            document.getElementById("smail").style.borderColor = "red";
+            return false;
+            
+         }
+        else {
+            document.getElementById("smail").style.borderColor = "#47385D";
+            costvali();
+            return false; 
+         }}
+
+    function costvali(){
+    let cos = document.forms["subForm"]["cost"].value;
+    if (cos == "") {
+        document.getElementById("cost").style.borderColor = "red";
+        return false;
+                
+        }
+     else {
+        document.getElementById("cost").style.borderColor = "#47385D";
+         ynamevali();
+         return false; 
+     }}
+
+
+    function ynamevali(){
+         let yna = document.forms["subForm"]["yourname"].value;
+        if (yna == "") {
+        document.getElementById("yname").style.borderColor = "red";
+             return false;
+                    
+         }
+         else {
+            document.getElementById("yname").style.borderColor = "#47385D";
+            ymailvali();
+             return false; 
+            }}
+
+
+        function ymailvali(){
+        let yma = document.forms["subForm"]["yourmail"].value;
+          if (yma == "") {
+            document.getElementById("ymail").style.borderColor = "red";
+            return false;
+                        
+         }
+         else {
+            document.getElementById("ymail").style.borderColor = "#47385D";
+            clientvali();
+            return false; 
+         }}
+
+         function clientvali(){
+            let cli = document.forms["subForm"]["project/client"].value;
+            if (cli == "") {
+                document.getElementById("client").style.borderColor = "red";
+                return false;
+                            
+                }
+            else{
+                document.getElementById("client").style.borderColor = "#47385D";
+                cdatevali();
+                return false; 
+             }}
+
+         function cdatevali(){
+              let cda = document.forms["subForm"]["creationdate"].value;
+             if (cda == "") {
+                document.getElementById("cdate").style.borderColor = "red";
+                 return false;
+                                
+             }
+            else {
+                document.getElementById("cdate").style.borderColor = "#47385D";
+                addBar();
+                 return false; 
+            }}
+    
+
+
+//staal slut
 function addBar() {
     //takes monthlyCost const from index.js, and goes into the inner text of the ID
     let cost = monthlyCost.innerText;
