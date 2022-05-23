@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+    <title>Formular</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Style guide</h1>
+      <hr>
+      <p>Formular</p> </div>
+<div> <img src="billeder/ucl.png" class="virk" alt="UCL logo"></div>
+    <div id="sideNav" class="sidenav">
+     <a href="typografi.html" id="typografi">Typografi</a>
+     <a href="knapper.html" id="knapper">Knapper</a>
+     <a href="formular.html" id="formular">Formular</a>
+     <a href="farver.html" id="farver">Farver</a>
+     <a href="ikoner.html" id="ikoner">Ikoner</a>
+     <a href="navigation.html" id="navigation">Navigation</a>
+   </div>
+   <p class="tekst" id="kontakt">Kontaktformular:</p>
+   <form id="my_form">
+
+     <p><input id="n" placeholder="Navn" required /></p>
+     <p><input id="e" placeholder="E-mail" type="email" required /></p>
+     <textarea
+       id="m"
+       placeholder="Skriv din besked her"
+       rows="10"
+       required
+     ></textarea>
+     <p>
+       <input id="mybtn" type="submit" value="Send" />
+       <span id="status"></span>
+     </p>
+   </form>
+
+  </body>
+</html>

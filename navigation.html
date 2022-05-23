@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+    <title>Navigation</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Style guide</h1>
+      <hr>
+      <p>Navigation</p> </div>
+<div> <img src="billeder/ucl.png" class="virk" alt="UCL logo"> </div>
+    <div id="sideNav" class="sidenav">
+     <a href="typografi.html" id="typografi">Typografi</a>
+     <a href="knapper.html" id="knapper">Knapper</a>
+     <a href="formular.html" id="formular">Formular</a>
+     <a href="farver.html" id="farver">Farver</a>
+     <a href="ikoner.html" id="ikoner">Ikoner</a>
+     <a href="navigation.html" id="navigation">Navigation</a>
+   </div>
+  <div id="kodevenstre"> <pre><code style = "overflow: scroll auto;">
+&lt;a href="" class="fbtn" id="fhome"&gt;
+  &lt;img src="billeder/home.png" alt="home icon" class="ficon" /&gt;
+&lt;/a&gt;
+&lt;a href="" class="fbtn"&gt;
+  &lt;img src="billeder/news.png" alt="news icon" class="ficon" /&gt;
+&lt;/a&gt;
+&lt;a href="" class="fbtn"&gt;
+  &lt;img src="billeder/cal.png" alt="calender icon" class="ficon" /&gt;
+&lt;/a&gt;
+&lt;a href="" class="fbtn"&gt;
+  &lt;img src="billeder/imp.png" alt="important icon" class="ficon" /&gt;
+&lt;/a&gt;
+}</code></pre> </div>
+
+<div id="kodehojre"> <pre><code style = "overflow: scroll auto;">
+     footer {
+       display: flex;
+       justify-content: space-around;
+       width: 100%;
+       bottom: 150px;
+       position: fixed;
+       bottom: 0;
+     }
+
+     .fbtn {
+       background-color:#00454E;
+       align-content: stretch;
+       width: 25%;
+       text-align: center;
+       align-items: center;
+       transition: 0.3s;
+     }
+
+     .fbtn:hover {
+       background-color: #CAE4E3;
+     }
+
+     .ficon {
+       margin: 10px;
+       margin-bottom: 5px;
+       height: 50px;
+       width: auto;
+     }
+   }</code></pre></div>
+   <div class="navigationtekst">
+     <p class="htmltekst"> Der bliver oprettet en fælles klasse da alle skal kunne det samme.<br>
+       Derefter bliver der lavet img klasser til de forskellige billeder </p>
+     <p class= "csstekst"> Der bliver lavet en footer så vi kan holde navbaren i bunden.<br>
+       Den bliver stylet så alle 4 img sidder hvor de skal.<br>
+       Derefter bliver der lavet en hover og klik effekt så du kommer hen til den rigtige side. </p>
+   </div>
+   <footer>
+     <a href="" class="fbtn" id="fhome">
+       <img src="billeder/home.png" alt="home icon" class="ficon" />
+     </a>
+     <a href="" class="fbtn">
+       <img src="billeder/news.png" alt="news icon" class="ficon" />
+     </a>
+     <a href="" class="fbtn">
+       <img src="billeder/cal.png" alt="calender icon" class="ficon" />
+     </a>
+     <a href="" class="fbtn">
+       <img src="billeder/imp.png" alt="important icon" class="ficon" />
+     </a>
+   </footer>
+  </body>
+</html>

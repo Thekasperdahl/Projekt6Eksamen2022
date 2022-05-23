@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+    <title> Style guide </title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Style guide</h1>
+      <hr>
+      <p>Knapper</p> </div>
+<div> <img src="billeder/ucl.png" class="virk" alt="UCL logo"> </div>
+    <div id="sideNav" class="sidenav">
+     <a href="typografi.html" id="typografi">Typografi</a>
+     <a href="knapper.html" id="knapper">Knapper</a>
+     <a href="formular.html" id="formular">Formular</a>
+     <a href="farver.html" id="farver">Farver</a>
+     <a href="ikoner.html" id="ikoner">Ikoner</a>
+     <a href="navigation.html" id="navigation">Navigation</a>
+   </div>
+   <div id="knapper_seopslag">
+     <button class="knap_seopslag">Se opslag &#8250;</button>
+     <p class="beskrivelse_seopslag"> Se opslag bliver brugt til at brugeren kan udvide beskeden<br> Derudover er knappen blivet stylet gennem CSS <br></p>
+     <div class="kode_seopslag"> <pre><code style = "overflow: scroll auto;">
+       CSS
+       .knap{
+         color: #00454E;
+         font-family: 'Proxima Nova Alt ';
+         font-size: 19px;
+         background-color: #CAE4E3;
+         text-decoration: underline;
+         border: none;
+         border-radius: 10px;
+         padding: 3%;
+         margin-top: 0%;
+         margin-left: 5%;
+       }
+
+       .knap:hover {
+           background-color: rgb(71,185,179,80%);
+       }
+        }
+      </code></pre></div>
+   </div>
+
+<br>
+   <div id="knapper_selektier">
+     <button class="knap_selektier">Se lektier &#8250;</button>
+     <p class="beskrivelse_selektier"> Se lektier er et hyperlink til Itslearning hvor man kan<br>se ens lektier. Dette er også stylet i CSS </p>
+     <div class="kode_selektier"> <pre><code style="overflow: scroll auto;">
+       CSS
+       .knap{
+         color: #00454E;
+         font-family: 'Proxima Nova Alt ';
+         font-size: 19px;
+         background-color: #CAE4E3;
+         text-decoration: underline;
+         border: none;
+         border-radius: 10px;
+         padding: 3%;
+         margin-top: 0%;
+         margin-left: 5%;
+       }
+
+       .knap:hover {
+           background-color: rgb(71,185,179,80%);
+       }
+        }
+      </code></pre></div>
+   </div>
+   <br>
+   <div id="knapper_pile">
+     <div class="prev" onclick="plusSlides(-1)"><img src="billeder/lillewedge.png" alt="" class="knap"> </div>
+     <div class="next" onclick="plusSlides(1)" ><img src="Assets/hojre.png" alt="" class="knap"> </div>
+     <p class="beskrivelse_pile"> Dette bruges til at navigere igennem ens kalender<br>se ens lektier. Dette er også stylet i CSS </p>
+     <div id="kode_pile"> <pre><code style="overflow: scroll auto;">
+ &lt; class="prev" onclick="plusSlides(-1)"&gt; &lt;img src="billeder/lillewedge.png" alt="" class="knap"&gt;&lt;/div&gt;
+  &lt;div class="next" onclick="plusSlides(1)"&gt; &lt;img src="Assets/hojre.png" alt="" class="knap"&gt; &lt;/div&gt;
+</code></pre></div> </div>
+      <br>
+      <br>
+      <div id="knapper_login">
+      <button class="knap_login" onclick="sub()">Sign in</button>
+      <p class="beskrivelse_login"> Dette bruges til at brueren kan logge in på EZInFo</p>
+      <div id="kode_login"> <pre><code style="overflow: scroll auto;">
+&lt;button onclick="sub()"&gt;Sign in&lt;button/&gt;
+</code></pre></div> </div>
+<br>
+<div id="knapper_logud">
+<button class="logud">Log ud <img src="billeder/logud.png" alt="logud" class="logudikon"></button>
+  <p class="beskrivelse_logud"> Gør at brugeren kan logge ud. Den er også stylet i CSS <br></p>
+  <div class="kode_logud"> <pre><code style="overflow: scroll auto;">
+
+HTML
+
+&lt;button class="logud"&gt;Log ud &lt;img src="billeder/logud.png" alt="logud" class="logudikon"&gt; &lt;button/&gt;
+
+CSS
+    .logud {
+        color: #00454E;
+        font-family: 'arial';
+        font-size: 15px;
+        background-color: #ffffff;
+        text-decoration: underline;
+        border: none;
+        border-radius: 10px;
+        padding: 2%;
+        width: 120px;
+        max-width: 100%;
+        margin-left: 40%;
+    }
+
+    .logud:hover {
+        background-color: rgb(71,185,179,80%);
+    }
+
+    .logudikon {
+        width: 15px;
+        max-width: 100%;
+        margin-left: 8px;
+    }
+  </code></pre></div></div>
+<br>
+<div id="knapper_send">
+  <p><input id="mybtn" type="submit" value="Send" class="send_knap"> <span id="status"></span></p>
+  <p class="beskrivelse_send"> Gør at brugeren kan sende kontaktformularen. <br>Den er også stylet i CSS</p>
+  <div class="kode_send"> <pre><code style="overflow: scroll auto;">
+  &lt;p&gt; &lt;input; id="mybtn" type="submit" value="Send"&gt; &lt;span id="status"&gt; &lt;/span>&lt;/p&gt;
+}   </code></pre></div></div>
+  <br>
+     <div id="knapper_eye">
+       <img onclick="seep()" id="btnveiw" src="billeder/eyeno.png" alt="eye with line through" class="eye">
+       <p class="beskrivelse_eye"> Gør at brugeren kan se sin kode i login<br> Samtidig kan den også gøre så koden ikke kan ses</p>
+       <div class="kode_eye"> <pre><code style="overflow: scroll auto;">
+&lt;img onclick="seep()" id="btnveiw" src="eyeno.png" alt="eye with line through"&gt;
+}
+</code></pre></div></div>
+<div class= "tester">
+   <label for="myCheck">Har du forstået vores brug af knapper?</label>
+   <input type="checkbox" id="myCheck" onclick="myFunction()">
+ </div> <p id="text" style="display:none">Nice, du forstod det!</p>
+  </body>
+</html>
