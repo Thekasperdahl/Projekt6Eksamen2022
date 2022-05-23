@@ -82,10 +82,16 @@ cancelSub.onclick = function cancelSub() {
   document.getElementById("cancel-sub-parent").style.display = "block";
 }
 
+function closeModal2() {
+  document.querySelector(".modal2").style.display = "none";
+  document.getElementById("subCancelSuccesParent").style.display ="none";
+}
+
 cancelSubConfirm.onclick = function cancelSubConfirm() {
   document.getElementById("subCancelSuccesParent").style.display ="block"
   document.getElementById("cancel-sub-parent").style.display = "none";
   removeBar(currentOverviewBar);
+  setTimeout(closeModal2, 3000);
 }
 
 function modalFill(bar) {
