@@ -10,6 +10,11 @@
     src: url(fonts/calibri.ttf);
 }
 
+.header-text {
+    color: #ffffff;
+    font-size: 40px;
+}
+
 /* Kasper */
 
 .alert-container{
@@ -36,6 +41,10 @@
     align-items: center;
 }
 
+.thumbnail-text-modal {
+    padding-top: 25px;
+}
+
 .overlay-bar-name {
     font-family: hansen;
     margin-left: 10px;
@@ -45,7 +54,7 @@
     color: #E0F9F0;
     font-family: 'Calibri';
     text-align: center;
-    size: 21px;
+    size: 24px;
 }
 
 #alert-admin-parent {
@@ -404,6 +413,7 @@ body {
     margin-right: 10px;
     font-size: 11px;
     margin-left: auto;
+    white-space: nowrap;
 }
 
 .sub-bars-name {
@@ -454,6 +464,10 @@ body {
     background: #CBEBDB
 }
 
+.latest-bar:nth-child(2n+2):hover {
+    background: #ffffff
+}
+
 .latest-bars-right-1 {
     height: 20px;
     background-color: #E0F9F0;
@@ -485,6 +499,9 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .thumbnail-text {
@@ -712,7 +729,7 @@ label{
     h1{
         display: block;
         color: #FFFFFF;
-        font-size: 60px;
+        font-size: 40px;
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -948,6 +965,7 @@ label{
         font-size: 13px;
         margin-left: auto;
         padding-right: 65px;
+        white-space: nowrap;
     }
 
     .project-client-headline {

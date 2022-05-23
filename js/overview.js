@@ -1,3 +1,5 @@
+//Søren JS Start
+
 const btn2 = document.querySelectorAll(".myBtn2");
 let myBtn2Array = [];
 for (let index = 0; index < btn2.length; index++) {
@@ -13,6 +15,7 @@ const alertAdminSucces = document.getElementById("alert-admin-succes");
 const confirmAlert = document.getElementById("confirmAlert");
 const cancelSub = document.getElementById("red-cancel");
 const cancelSubConfirm = document.getElementById("confirmCancelSuccesButton");
+const alertBarValue = document.getElementById("alertBarValue");
 
 //modal content id list
 
@@ -90,3 +93,5 @@ function modalFill(bar) {
   modalPrice.innerHTML = bar.children[7].innerHTML;
   modalAdminEmail.innerHTML = bar.children[8].innerHTML;
 }
+
+//Søren JS Slut

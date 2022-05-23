@@ -42,3 +42,5 @@ adminBox.addEventListener('click', function onClick(){
     adminClicked = false;
   }
 }); 
+
+//kodet af Kasper

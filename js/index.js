@@ -1,3 +1,5 @@
+//Søren JS Start
+
 const openModalBtn = document.getElementById("open-modal-btn");
 
 // Get the modal
@@ -52,10 +54,14 @@ window.onclick = function(event) {
   }
 }
 
+//Søren JS Slut
+
+
+//Mikkel loop + array start
+
 let sum = 0;
 
 for (let c = 0; c < priceTag.length; c++) {
-  //???
     const element = priceTag[c];
 
   //converts priceTag array innerHTML into numbers, and adds them together
@@ -63,4 +69,7 @@ for (let c = 0; c < priceTag.length; c++) {
 }
 
 monthlyCost.innerHTML = sum;
+
+//Mikkel loop slut
+
 
