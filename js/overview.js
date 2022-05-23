@@ -38,12 +38,17 @@ const modalPrice = document.getElementById("modalPrice");
 //the date of the sub creation
 const modalCreationDate = document.getElementById("modalCreationDate");
 
+//placeholder for selected bar
+let currentOverviewBar = {};
 
 function applyOnclickForModal2() {
-  [].forEach.call(myBtn2Array, function(el) {
-      el.onclick = function() {
-        modalFill(el);
+  [].forEach.call(myBtn2Array, function(bar) {
+      bar.onclick = function() {
+        modalFill(bar);
         modal2.style.display = "block";
+
+        //overrides placeholder with selected bar
+        currentOverviewBar = bar;
       }
     })
 }
@@ -80,6 +85,7 @@ cancelSub.onclick = function cancelSub() {
 cancelSubConfirm.onclick = function cancelSubConfirm() {
   document.getElementById("subCancelSuccesParent").style.display ="block"
   document.getElementById("cancel-sub-parent").style.display = "none";
+  removeBar(currentOverviewBar);
 }
 
 function modalFill(bar) {
@@ -94,4 +100,7 @@ function modalFill(bar) {
   modalAdminEmail.innerHTML = bar.children[8].innerHTML;
 }
 
+function removeBar(bar) {
+  container.removeChild(bar);
+}
 //Søren JS Slut

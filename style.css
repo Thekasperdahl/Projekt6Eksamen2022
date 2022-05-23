@@ -15,6 +15,21 @@
     font-size: 40px;
 }
 
+#open-modal-btn {
+    font-size: 50px;
+    cursor: pointer;
+    background-color: #E0F9F0;
+}
+
+.button-content {
+    background-color: #DCBCFD;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+}
+
+
 /* Kasper */
 
 .alert-container{
@@ -54,7 +69,7 @@
     color: #E0F9F0;
     font-family: 'Calibri';
     text-align: center;
-    size: 24px;
+    font-size: 24px;
 }
 
 #alert-admin-parent {
@@ -220,7 +235,7 @@
 }
 
 .price-month::after {
-    content: "/month";
+    content: ",- DKK/month";
 }
 
 .overview-sub-date{
@@ -244,7 +259,7 @@
     background-color: #e07070;
     border-radius: 30px;
     grid-area: cancelsub;
-    margin: 1;
+    margin: 1px;
     color: #000000;
     text-decoration: none;
 }
