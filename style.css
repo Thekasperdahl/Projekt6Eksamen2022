@@ -2,6 +2,34 @@
     font-family: hansen;
     src: url(Hansen\ Grotesque.ttf);
 }
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: #47385D;
+    padding: 20px;
+    font-family: hansen;
+    border-radius: 10px;  
+    
+}
+nav a{
+    font-family: hansen;
+    text-decoration: none;
+    color: #E0F9F0;
+    font-size: 20px;
+
+}
+
+.headline-afsnit{
+    color: #E0F9F0;
+    background-color: #47385D;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: hansen;
+    border-radius: 10px;
+    grid-area: typo;
+}
+
 
 h1{
     font-family: hansen;
