@@ -139,3 +139,62 @@ nav a{
     height: 120px;
 
 }
+.button-content {
+    background-color: #DCBCFD;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+}
+.resp{
+    background-color: #CBEBDB;
+    padding: 20px;
+}
+
+.bar{
+    background-color: #E0F9F0;
+    border-radius: 15px;
+    width: auto;
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.inputtext{
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 1px solid #47385D;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #47385D;
+    color: #E0F9F0;
+}
+.boxaround{
+    background-color: #36244D;
+    padding: 5px;
+
+}
+
+.bgbox{
+    background-color: #ffffff10;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+}
+.ad{
+    height: 35px;
+    width: 35px;
+    background-color: #DF9791;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.ap{
+    background-color: #E0F9F0;
+    border: 0;
+    height: 146px;
+    width: 134px;
+    border-radius: 15px;
+}
