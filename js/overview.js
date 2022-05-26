@@ -102,7 +102,7 @@ cancelSubConfirm.onclick = function cancelSubConfirm() {
   document.getElementById("subCancelSuccesParent").style.display ="block"
   document.getElementById("cancel-sub-parent").style.display = "none";
   removeBar(currentOverviewBar);
-  setTimeout(closeModal2, 3000);
+  setTimeout(closeModal2, 10000);
 }
 
 function modalFill(bar) {
