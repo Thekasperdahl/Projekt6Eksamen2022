@@ -5,6 +5,8 @@ const openModalBtn = document.getElementById("open-modal-btn");
 // Get the modal
 const modal = document.getElementById("myModal");
 
+const addBarSucces = document.getElementById("subAddSucces");
+
 // Get the button that opens the modal
 const addNewBtn = document.getElementById("add-bar-btn");
 
@@ -45,6 +47,7 @@ subCount.innerHTML = barCounter;
 // When the user clicks the button, open the modal 
 openModalBtn.onclick = function() {
   modal.style.display = "block";
+  addBarSucces.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

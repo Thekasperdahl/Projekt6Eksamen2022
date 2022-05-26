@@ -135,6 +135,9 @@ const yourMail = document.getElementById("ymail");
 
 const latestBarContainer = document.getElementById("latestBarContainer");
 
+const formContent = document.getElementById("formContent");
+const formHeader = document.getElementById("formHeader");
+
 function addBar() {
     //takes monthlyCost const from index.js, and goes into the inner text of the ID
     let cost = monthlyCost.innerText;
@@ -220,19 +223,26 @@ function addBar() {
     container.append(bar);
 
     //"closes" the modal used to insert values for the new bar
-    modal.style.display = "none";
+    modal.style.display = "block";
+    formContent.style.display = "none";
+    formHeader.style.display = "none";
+    setTimeout(subAddClose, 2000)
 
     //increases the barCounter array with one, and puts it in the innerHTML of the subCount
     barCounter++
     subCount.innerHTML = barCounter;
     checkDuplicates()
 
+    addBarSucces.style.display = "block";
     
     bar.addEventListener("click",function(){
         modalFill(bar);
     })
 }
 
+function subAddClose() {
+    modal.style.display = "none";
+}
 
 //closes the modal when clicking anywhere else on the screen
 span.onclick = function() {

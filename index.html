@@ -20,7 +20,7 @@
         <div class="desktop-grid">
             <div class="container-a">
                 <button id="open-modal-btn" class="add-new add-new-text">
-                    <i class="button-content">&plus;</i>         
+                    <p class="button-content">&plus;</p>         
                 </button>
 
                 <div class="info-box">
@@ -218,9 +218,9 @@
         <div class="modal-content">
             <span class="close">&times;</span>
 
-            <header>Add new subscription</header>
+            <header id="formHeader">Add new subscription</header>
 
-            <form name="subForm" class="gridnewsub" onsubmit="return validateForm()">
+            <form id="formContent" name="subForm" class="gridnewsub" onsubmit="return validateForm()">
 
                 <label for="sname">Subscription name
                     <input
@@ -286,6 +286,16 @@
 
                 <button class="button">Confirm</button>
             </form>
+
+            <div id="subAddSucces">
+                <div class="alert-container">
+                    <p class="alert-overlay-toptekst">Your subscription has been added</p>
+                </div>
+                   
+                <div class="knap-div">
+                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
+                </div>
+            </div>
         </div>  
     </div>
 
@@ -346,7 +356,7 @@
                 </div>
             
                 <div class="knap-div">
-                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
+                    <a href="#" id="alertAdminCheck"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
                 </div>
             </div>
 
@@ -367,7 +377,7 @@
                 </div>
                    
                 <div class="knap-div">
-                    <a href="#"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
+                    <a href="#" id="alertCancelCheck"><img class="check-mark-round" src="assets/check-mark.png" alt="check mark"></a>
                 </div>
             </div>
         </div>

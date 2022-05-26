@@ -19,13 +19,16 @@
     font-size: 50px;
     cursor: pointer;
     background-color: #E0F9F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-content {
     background-color: #DCBCFD;
     border-radius: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #000000;
 }
 
@@ -118,6 +121,7 @@
     justify-content: space-between;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .check-mark-round{
@@ -262,6 +266,7 @@
     margin: 1px;
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #red-cancel:hover{
@@ -275,6 +280,7 @@
     grid-area: alert;
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #alert-admin:hover{
@@ -311,7 +317,7 @@
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
@@ -993,7 +999,7 @@ label{
 
 .modal2 {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;

@@ -38,6 +38,17 @@ const modalPrice = document.getElementById("modalPrice");
 //the date of the sub creation
 const modalCreationDate = document.getElementById("modalCreationDate");
 
+const alertCancelCheck = document.getElementById("alertCancelCheck");
+const alertAdminCheck = document.getElementById("alertAdminCheck");
+
+alertAdminCheck.onclick = function closeModal2Check() {
+  modal2.style.display = "none";
+}
+
+alertCancelCheck.onclick = function closeModal2Check(){
+  modal2.style.display = "none";
+};
+
 //placeholder for selected bar
 let currentOverviewBar = {};
 
